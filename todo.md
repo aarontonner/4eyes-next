@@ -1,0 +1,8 @@
+- mobile navigation JS
+- faq page JS
+- complete the reviews page or get rid of it
+- go through each page and make sure there are no text or other items that shouldnt be there (e.g. homepage lorem)
+- navigation bar social icons
+- blog
+- portfolio ACF
+- 4 eyes requests (hero slider, cities on home, more locations, other small changes, recent post)

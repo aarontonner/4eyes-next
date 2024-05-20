@@ -1,0 +1,636 @@
+/*-- -------------------------- -->
+<---           Logos            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  .logos-857 {
+    padding: var(--sectionPadding);
+    background-color: #f7f7f7;
+
+    .cs-container {
+      width: 100%;
+      /* changes to 1280px at desktop */
+      max-width: calc(800 / 16 * 1rem);
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* 48px - 64px */
+      gap: clamp(3rem, 6vw, 4rem);
+    }
+
+    .cs-content {
+      /* set text align to left if content needs to be left aligned */
+      text-align: center;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      /* centers content horizontally, set to flex-start to left align */
+      align-items: center;
+    }
+
+    .cs-title {
+      margin: 0;
+    }
+
+    .cs-logo-group {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: calc(40 / 16 * 1rem);
+    }
+
+    .cs-logo {
+      width: 40%;
+      max-width: calc(120 / 16 * 1rem);
+      height: auto;
+      margin: 0;
+      display: block;
+    }
+  }
+}
+
+/* Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+  .logos-857 {
+    .cs-container {
+      max-width: calc(1280 / 16 * 1rem);
+    }
+  }
+}
+
+/*-- -------------------------- -->
+<---          Reviews           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  .reviews-1673 {
+    padding: var(--sectionPadding);
+    position: relative;
+    z-index: 1;
+
+    .cs-container {
+      width: 100%;
+      /* changes to 1280px at tablet */
+      max-width: calc(584 / 16 * 1rem);
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* 40px - 64px */
+      gap: clamp(2.5rem, 4.5vw, 4rem);
+    }
+
+    .cs-content {
+      text-align: left;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .cs-title {
+      margin: calc(0 / 16 * 1rem);
+    }
+
+    .cs-card-group {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      /* 16px - 20px */
+      gap: clamp(1rem, 2.5vw, 1.25rem);
+    }
+
+    .cs-item {
+      list-style: none;
+      width: 100%;
+      max-width: calc(630 / 16 * 1rem);
+      /* 20px - 40px top & bottom */
+      /* 20px - 40px left & right */
+      padding: clamp(1.25rem, 3.15vw, 2.5rem) clamp(1.25rem, 3.15vw, 2.5rem);
+      background-color: #f7f7f7;
+      /* prevents padding from adding to height and width */
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      position: relative;
+      /* 24px - 48px */
+      gap: clamp(1.5rem, 4vw, 3rem);
+    }
+
+    .cs-flex-group {
+      /* this margin top auto will push everything up and force the cs-flex-group to the bottom of the container. This is to account for review cards with different heights because of more or less text and makes the cards more responsive to changing text */
+      margin-top: auto;
+      display: flex;
+      align-items: flex-start;
+      gap: calc(12 / 16 * 1rem);
+    }
+
+    .cs-profile {
+      width: calc(52 / 16 * 1rem);
+      height: calc(52 / 16 * 1rem);
+      border-radius: 50%;
+      position: relative;
+      display: block;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        /* makes the image behave like a background image */
+        object-fit: cover;
+      }
+    }
+
+    .cs-name {
+      /* 20px - 25px */
+      font-size: calc(20 / 16 * 1rem);
+      line-height: 1.2em;
+      font-weight: 700;
+      margin: 0;
+      /* in case one card has more text than the other, this pushes up against the review text so the name and title are always at the bottom. Only works if parent is a flexbox */
+      margin-top: auto;
+      color: var(--headerColor);
+      display: block;
+    }
+
+    .cs-job {
+      /* 14px - 16px */
+      font-size: calc(16 / 16 * 1rem);
+      line-height: 1.5em;
+      font-weight: 400;
+      margin: 0;
+      color: var(--bodyTextColor);
+      display: block;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: calc(16 / 16 * 1rem);
+    }
+
+    .cs-item-stars {
+      width: calc(108 / 16 * 1rem);
+      height: auto;
+    }
+
+    .cs-review {
+      /* 14px - 16px */
+      font-size: clamp(0.875rem, 1.6vw, 1.25rem);
+      line-height: 1.5em;
+      margin: 0;
+      color: var(--bodyTextColor);
+      z-index: 1;
+    }
+
+    .cs-quote {
+      width: calc(86 / 16 * 1rem);
+      height: auto;
+      position: absolute;
+      right: calc(0 / 16 * 1rem);
+      bottom: calc(0 / 16 * 1rem);
+      z-index: 0;
+    }
+
+    .cs-background {
+      display: none;
+      position: absolute;
+      left: 50%;
+      /* changes to 40px at 1300px */
+      right: calc(16 / 16 * 1rem);
+      top: calc(40 / 16 * 1rem);
+      bottom: calc(40 / 16 * 1rem);
+      z-index: -1;
+
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  .reviews-1673 {
+    .cs-container {
+      max-width: calc(1280 / 16 * 1rem);
+    }
+
+    .cs-card-group {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: stretch;
+    }
+
+    .cs-background {
+      display: block;
+    }
+  }
+}
+
+/* Large Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+  .reviews-1673 {
+    .cs-background {
+      right: calc(40 / 16 * 1rem);
+    }
+  }
+}
+
+/*-- -------------------------- -->
+<---         Gallery           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  .services-342 {
+    padding: var(--sectionPadding);
+
+    .cs-container {
+      width: 100%;
+      max-width: calc(1280 / 16 * 1rem);
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* 48px - 64px */
+      gap: clamp(3rem, 6vw, 4rem);
+    }
+
+    .cs-content {
+      /* set text align to left if content needs to be left aligned */
+      text-align: center;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      /* centers content horizontally, set to flex-start to left align */
+      align-items: center;
+    }
+
+    .cs-card-group {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      /* 16px - 20px */
+      gap: clamp(1rem, 1.6vw, 1.25rem);
+    }
+
+    .cs-item {
+      list-style: none;
+      width: 100%;
+      max-width: calc(500 / 16 * 1rem);
+      border-radius: calc(8 / 16 * 1rem);
+      position: relative;
+      z-index: 1;
+      transition: box-shadow 0.3s, transform 0.3s;
+
+      &:hover {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        transform: translateY(calc(-7 / 16 * 1rem));
+        .cs-picture {
+          img {
+            opacity: 0.3;
+            transform: scale(1.1);
+          }
+        }
+        .cs-h3 {
+          color: var(--primaryLight);
+        }
+      }
+
+      &:before {
+        /* border, done in pseudo so it can sit under the picture */
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: calc(8 / 16 * 1rem);
+        border: 1px solid #e8e8e8;
+        /* prevents border from affecting height and width */
+        box-sizing: border-box;
+        background: transparent;
+        opacity: 1;
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+    }
+
+    .cs-link {
+      text-decoration: none;
+      /* 16px - 24px */
+      padding-bottom: clamp(1rem, 2.2vw, 1.5rem);
+      display: block;
+    }
+
+    .cs-picture {
+      width: 100%;
+      height: calc(240 / 16 * 1rem);
+      /* 16px - 24px */
+      margin-bottom: clamp(1rem, 2.2vw, 1.5rem);
+      border-radius: calc(8 / 16 * 1rem) calc(8 / 16 * 1rem) 0 0;
+      background-color: var(--primaryLight);
+      /* clips the img tag corners */
+      overflow: hidden;
+      display: block;
+      position: relative;
+      z-index: 10;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: transform 0.6s, opacity 0.3s;
+      }
+    }
+
+    .cs-h3 {
+      /* 20px - 25px */
+      font-size: clamp(1.25rem, 3vw, 1.5625rem);
+      line-height: 1.2em;
+      font-weight: 700;
+      color: var(--headerColor);
+      margin: 0 0 calc(12 / 16 * 1rem) 0;
+      /* 16px - 24px */
+      padding: 0 clamp(1rem, 2vw, 1.5rem);
+      transition: color 0.3s;
+    }
+
+    .cs-item-text {
+      /* 14px - 16px  */
+      font-size: clamp(0.875rem, 1.5vw, 1rem);
+      line-height: 1.5em;
+      color: var(--bodyTextColor);
+      margin: 0;
+      /* 16px - 24px */
+      padding: 0 clamp(1rem, 2.2vw, 1.5rem);
+    }
+  }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  .services-342 {
+    .cs-card-group {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .cs-item {
+      /* we do this so it's stackable. You can add any number of reviews you want and they will stack and center in the middle. We don't use grid because if you have an odd number of cards, they don't stay centered, they align with their grid lines. This way its more FLEX-ible*/
+      width: clamp(31.85%, 30.5vw, 32.28%);
+    }
+  }
+}
+
+/*-- -------------------------- -->
+<---          Contact           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #contact-1700 {
+    padding: var(--sectionPadding);
+    position: relative;
+    z-index: 1;
+
+    .cs-container {
+      width: 100%;
+      /* changes to 1280px at desktop */
+      max-width: calc(584 / 16 * 1rem);
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* 48px - 128px */
+      gap: clamp(3rem, 10vw, 8rem);
+      position: relative;
+    }
+
+    .cs-content {
+      /* set text align to left if content needs to be left aligned */
+      text-align: left;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      /* centers content horizontally, set to flex-start to left align */
+      align-items: flex-start;
+    }
+
+    .cs-title {
+      max-width: 23ch;
+      margin: 0 0 calc(16 / 16 * 1rem) 0;
+    }
+
+    .cs-topper {
+      color: var(--secondary);
+    }
+
+    .cs-author {
+      margin-top: calc(40 / 16 * 1rem);
+      display: flex;
+      align-items: center;
+      gap: calc(16 / 16 * 1rem);
+    }
+
+    .cs-profile {
+      width: calc(52 / 16 * 1rem);
+      height: calc(52 / 16 * 1rem);
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+
+    .cs-flex-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .cs-signature {
+      width: auto;
+      height: calc(43 / 16 * 1rem);
+    }
+
+    .cs-form {
+      width: 100%;
+      max-width: calc(632 / 16 * 1rem);
+      /* prevents flexbox from affecting height and width */
+      box-sizing: border-box;
+      /* 32px - 48px top and bottom */
+      /* 16px - 60px left and right */
+      padding: clamp(2rem, 5.18vw, 3rem) clamp(1rem, 5vw, 3.75rem);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: calc(12 / 16 * 1rem);
+      position: relative;
+      /* prevents flexbox from squishing it */
+      flex: none;
+
+      .cs-title {
+        /* 24px - 48px */
+        margin: 0 0 clamp(1.5rem, 4vw, 3rem) 0;
+      }
+    }
+
+    .cs-label {
+      font-size: calc(16 / 16 * 1rem);
+      width: 100%;
+      color: var(--headerColor);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      grid-column: span 12;
+      gap: calc(4 / 16 * 1rem);
+    }
+
+    .cs-input {
+      font-size: calc(16 / 16 * 1rem);
+      width: 100%;
+      height: calc(56 / 16 * 1rem);
+      /* prevents padding from adding to height and width */
+      box-sizing: border-box;
+      padding: 0;
+      padding-left: calc(24 / 16 * 1rem);
+      color: var(--headerColor);
+      background-color: #fff;
+      border: none;
+
+      &::placeholder {
+        color: #767676;
+        opacity: 0.6;
+      }
+    }
+
+    .cs-textarea {
+      font-family: inherit;
+      min-height: calc(120 / 16 * 1rem);
+      /* 16px - 28px */
+      margin: 0 0 clamp(1rem, 3vw, 1.75rem) 0;
+      padding-top: calc(24 / 16 * 1rem);
+    }
+
+    .cs-button-solid {
+      font-size: calc(16 / 16 * 1rem);
+      font-weight: 700;
+      /* 46px - 56px */
+      line-height: clamp(2.875em, 5.5vw, 3.5em);
+      text-align: center;
+      text-decoration: none;
+      min-width: calc(150 / 16 * 1rem);
+      margin: 0;
+      /* prevents padding from adding to the width */
+      box-sizing: border-box;
+      padding: 0 calc(24 / 16 * 1rem);
+      color: #fff;
+      background-color: var(--secondary);
+      border: none;
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+      transition: color 0.3s;
+
+      &:before {
+        content: "";
+        width: 0%;
+        height: 100%;
+        background: #000;
+        opacity: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: width 0.3s;
+      }
+
+      &:hover {
+        color: #fff;
+        &:before {
+          width: 100%;
+        }
+      }
+    }
+
+    .cs-submit {
+      width: 100%;
+      min-width: calc(283 / 16 * 1rem);
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .cs-background {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+
+      &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: #f7f7f7;
+        opacity: 0.9;
+        position: absolute;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #contact-1700 {
+    .cs-container {
+      max-width: calc(1280 / 16 * 1rem);
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .cs-form {
+      width: 45vw;
+    }
+
+    .cs-submit {
+      width: auto;
+    }
+  }
+}
