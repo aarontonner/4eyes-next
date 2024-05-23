@@ -10,6 +10,8 @@ import "../styles/investment.scss"
 import "../styles/portfolio.scss"
 import "../styles/pricing.scss"
 import "../styles/services.scss"
+import "../styles/hero.scss"
+import "bootstrap/dist/css/bootstrap.min.css"
 
 function MyApp({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />

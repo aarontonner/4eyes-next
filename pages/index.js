@@ -1,10 +1,15 @@
+import HeroSlider from "../components/Hero/Hero";
+import Hero from "../components/Hero/Hero";
+import RecentPosts from "../components/RecentPosts/RecentPosts";
+import Featured from "../components/featured/Featured";
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 export default function Home(){
 return (
       <Layout>
         <Seo title="Banff Wedding Photographers | 4 Eyes Photography" description="Your Banff Wedding Photographers! Welcome to 4Eyes Photography with Eliza and Lukas – your Banff Wedding Photography team." />
-        <section id="hero-1900">
+       <HeroSlider />
+        {/* <section id="hero-1900">
           <div className="cs-container">
             <div className="cs-content">
               <div className="cs-flex">
@@ -92,19 +97,68 @@ return (
             </ul>
           </div>
           <div className="cs-video-wrapper">
-            {/*Compress your video and upload it to a CDN like Digital Oceans Spaces so the video file doesn't cause load time issues. You can also remove the video tag and uncomment the picture tag to use a image instead of a video. Don't forget to remove the cs-play button!*/}
             <video loading="lazy" src="https://4eyesphotography.ca/wp-content/uploads/2022/03/Banff-and-Calgary-Wedding-Photographers.mp4" autoPlay="false" muted />
-            {/* <picture class="cs-picture">
-            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-hero-image-2.png">
-            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-hero-image-2.png">
-            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-hero-image-2.png" alt="body builder" width="630" height="877">
-        </picture> */}
+            
           </div>
-          {/*Make sure to download this svg and change the fill color in a code editor to match the color of the section above this stitch*/}
           <img className="cs-graphic cs-light" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-video-dark-graphic.svg" alt="graphic" height={161} width={1920} loading="lazy" decoding="async" />
-          {/*download this and make sure it is the same color as the background of the section above it on dark mode so it makes it look like its one complete shape */}
           <img className="cs-graphic cs-dark" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-video-dark-graphic-dark.svg" alt="graphic" height={161} width={1920} loading="lazy" decoding="async" />
-        </section> 
+        </section>  */}
+
+          <Featured />
+
+<section id="sbsr-1279">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            
+            <source media="(max-width: 600px)" srcset="https://4eyesphotography.ca/wp-content/uploads/2019/01/best-wedding-photographer-canada.jpg"/>
+            
+            <source media="(min-width: 601px)" srcset="https://4eyesphotography.ca/wp-content/uploads/2019/01/best-wedding-photographer-canada.jpg"/>
+            <img loading="lazy" decoding="async" src="https://4eyesphotography.ca/wp-content/uploads/2019/01/best-wedding-photographer-canada.jpg" alt="banff wedding photographer" width="738" height="598"/>
+        </picture>
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">we'll be your favorite wedding guests!</span>
+                <h2 class="cs-title">We love to be part of the action!</h2>
+            </div>
+            <p class="cs-text">
+              It's always an absolute joy to be part of your special day. We always get told that we make what can be a very overwhelming day feel fun and stress-free. Whether it's being part of the action, or snapping dreamy mountain wedding photos, it's always highlight for us. </p>
+            <a href="/contact" class="cs-button-solid">Contact us</a>
+        </div>
+    </div>
+    <picture class="cs-background">
+        
+        
+    </picture>
+</section>
+
+
+<section id="sbs-1278">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            
+            <source media="(max-width: 600px)" srcset="https://4eyesphotography.ca/wp-content/uploads/2019/01/award-winning-photographer-canadian-rockies.JPG"/>
+           
+            <source media="(min-width: 601px)" srcset="https://4eyesphotography.ca/wp-content/uploads/2019/01/award-winning-photographer-canadian-rockies.JPG"/>
+            <img loading="lazy" decoding="async" src="https://4eyesphotography.ca/wp-content/uploads/2019/01/award-winning-photographer-canadian-rockies.JPG" alt="wedding photography banff" width="738" height="598"/>
+        </picture>
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">mountain adventures</span>
+                <h2 class="cs-title">giving you the mountain photos og your dreams</h2>
+            </div>
+            <p class="cs-text">
+              We always have so much fun spending time with our bride and groom to capture those bold and breathtaking wedding photos with the beautiful scenery of the Alberta Rockies. And yes... we spend just as much time obsessing over mountain ranges to shoot our next wedding photography session in as we do upgrading our camera gear!
+            </p>
+            <a href="/contact" class="cs-button-solid">contact us</a>
+        </div>
+    </div>
+    <picture class="cs-background">
+    
+    </picture>
+</section>
+                                
+                                      
+
         {/* ============================================ */}
         {/*            Side by Side Reverse              */}
         {/* ============================================ */}
@@ -188,12 +242,12 @@ return (
               <a href="/contact" className="cs-button-solid">Contact Us</a>
             </div>
             <div className="cs-logos">
-              <img className="cs-logo" src="https://4eyesphotography.ca/wp-content/uploads/2022/01/Calgary-Wedding-Photographers.jpg" alt="banff wedding photography award" width={210} height={29} loading="lazy" decoding="async" />
-              <img className="cs-logo" src="https://4eyesphotography.ca/wp-content/uploads/2022/01/Banff-Wedding-Photography.jpg" alt="banff wedding photography award" width={210} height={29} loading="lazy" decoding="async" />
-              <img className="cs-logo" src="https://4eyesphotography.ca/wp-content/uploads/2022/01/Calgary-Wedding-Photography.jpg" alt="banff wedding photography award" width={210} height={29} loading="lazy" decoding="async" />
-              <img className="cs-logo" src="https://4eyesphotography.ca/wp-content/uploads/2022/01/Banff-Wedding-Photographers-1.jpg" alt="wedding photography banff award" width={210} height={29} loading="lazy" decoding="async" />
-              <img className="cs-logo" src="https://4eyesphotography.ca/wp-content/uploads/2023/03/fm-member-mono-white.png" alt="bnaff photography flash master award" width={210} height={29} loading="lazy" decoding="async" />
-              <img className="cs-logo" src="https://4eyesphotography.ca/wp-content/uploads/2023/03/wedding-maps-awards-768x512-1.png" alt="bnaff photography wedding maps award" width={210} height={29} loading="lazy" decoding="async" />
+              <img className="cs-logo" src="https://4eyesphotography.ca/wp-content/uploads/2022/01/Calgary-Wedding-Photographers.jpg" alt="banff wedding photography award" width={420} height={58} loading="lazy" decoding="async" />
+              <img className="cs-logo" src="https://4eyesphotography.ca/wp-content/uploads/2022/01/Banff-Wedding-Photography.jpg" alt="banff wedding photography award" width={420} height={58} loading="lazy" decoding="async" />
+              <img className="cs-logo" src="https://4eyesphotography.ca/wp-content/uploads/2022/01/Calgary-Wedding-Photography.jpg" alt="banff wedding photography award" width={420} height={58} loading="lazy" decoding="async" />
+              <img className="cs-logo" src="https://4eyesphotography.ca/wp-content/uploads/2022/01/Banff-Wedding-Photographers-1.jpg" alt="wedding photography banff award" width={420} height={58} loading="lazy" decoding="async" />
+              <img className="cs-logo" src="https://4eyesphotography.ca/wp-content/uploads/2023/03/fm-member-mono-white.png" alt="bnaff photography flash master award" width={420} height={58} loading="lazy" decoding="async" />
+              <img className="cs-logo" src="https://4eyesphotography.ca/wp-content/uploads/2023/03/wedding-maps-awards-768x512-1.png" alt="bnaff photography wedding maps award" width={420} height={58} loading="lazy" decoding="async" />
             </div>
           </div>
         </section>
@@ -579,8 +633,9 @@ return (
             <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Fripple3.svg" alt="person" width={566} height={309} />
           </picture>
         </section>
+        <RecentPosts />
         <div className="elfsight-app-54b365a3-b593-472d-9662-326887486233" data-elfsight-app-lazy />
-        {'{'}% endblock %{'}'}
+       
       </Layout>
     );
   }

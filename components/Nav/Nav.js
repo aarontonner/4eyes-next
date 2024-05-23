@@ -3,7 +3,7 @@
 export default function Nav() {
     return (
       <header id="cs-navigation">
-        <div className="cs-top-bar">
+        {/* <div className="cs-top-bar">
           <div className="cs-top-container">
             <div className="cs-top-contact">
               <a href="tel:403-483-1916" className="cs-top-link">
@@ -28,7 +28,7 @@ export default function Nav() {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="cs-container">
           {/*Nav Logo*/}
           <a href="/" className="cs-logo" aria-label="back to home">
@@ -110,8 +110,21 @@ export default function Nav() {
                 </li>
               </ul>
             </div>
+            
           </nav>
           <a href="/contact" className="cs-button-solid cs-nav-button">contact us</a>
+          <div className="cs-top-social">
+              <a href="https://www.facebook.com/4EyesWeddingPhotographer/" target="_popup" className="cs-social-link">
+                <img className="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/clock-stroke-white.svghttps://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/facebook-lgrey.svg" alt="logo" width={16} height={16} aria-hidden="true" decoding="async" />
+              </a>
+              <a href="https://www.instagram.com/4eyesphotography_/" target="_popup" className="cs-social-link">
+                <img className="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/clock-stroke-white.svghttps://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-lgrey.svg" alt="banff wedding photographer instagram" width={16} height={16} aria-hidden="true" decoding="async" /> </a><a href="https://www.google.com/maps/place/4Eyes+Photography/@51.2041043,-114.5066666,17z/data=!3m1!4b1!4m6!3m5!1s0x53713ff21233f119:0xbe78d47ab5f477cf!8m2!3d51.2041043!4d-114.5040917!16s%2Fg%2F11mv5rl61x?entry=ttu" target="_popup" className="cs-social-link">
+                <img className="cs-social-icon" src="/assets/images/icons8-google.svg" alt="google banff wedding photography" width={16} height={16} aria-hidden="true" decoding="async" />
+              </a>
+              <a href="https://www.tiktok.com/@4eyesphotography" target="_popup" className="cs-social-link">
+                <img className="cs-social-icon" src="/images/icons8-tiktok.svg" alt="banff wedding photographer tiktok" width={16} height={16} aria-hidden="true" decoding="async" />
+              </a>
+            </div>
           {/*Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle*/}
           {/* <button id="dark-mode-toggle" aria-label="dark mode toggle">
             <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
