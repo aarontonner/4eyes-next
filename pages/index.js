@@ -282,7 +282,7 @@ return (
               </div>
               <p className="cs-text">
                 With endless creativity and passion for wedding photography in Banff, Eliza and Lukas will tell your love story through unique images that can be cherished forever. At 4Eyes Photography, we go beyond mere wedding and engagement photographs; we craft visual narratives that reflect the unique love stories of each couple against the stunning backdrop of Alberta's natural beauty. As experienced Banff wedding photographers, we understand the allure of this picturesque region and weave its charm seamlessly into every frame throughout the wedding photo shoots and meticulous editing. While Banff remains our heart and soul, our passion for capturing those wedding photos extend beyond borders. We believe in exploring new horizons, chasing sunsets in Calgary, embracing romance in Lake Louise, and discovering hidden gems in Canmore. Wherever your love story takes you, we'll be there to frame it beautifully as your professional Banff wedding photographers.          </p>
-              <a href="/contact" className="cs-button-solid">Book an Appointment</a>
+              <a href="/contact" className="cs-button-solid">Contact us</a>
             </div>
           </div>
         </section>
@@ -353,9 +353,7 @@ return (
             <div className="cs-content">
               <span className="cs-topper">4Eyes Does it Different</span>
               <h2 className="cs-title">You Deserve <span className="cs-color">The Best</span> Banff Wedding Photography</h2>
-              {'{'}# <p className="cs-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, pariatur:
-              </p> #{'}'}
+              
               <ul className="cs-ul">
                 <li className="cs-li">
                   <h3 className="cs-h3">
@@ -421,9 +419,7 @@ return (
                   <h3 className="cs-h3">
                     5 Star Client Reviews
                   </h3>
-                  <p className="cs-item-text">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis saepe eos inventore asperiores a, iste cum voluptates laboriosam illum dicta culpa repudiandae doloribus!
-                  </p>
+                  <p className="cs-item-text">We LOVE hearing from our bride and grooms, and we're often told that we fit into the wedding just as if we were your friends who want to enjoy the celebration!</p>
                 </li>
                 <li className="cs-li">
                   <h3 className="cs-h3">
@@ -457,7 +453,7 @@ return (
         {/* ============================================ */}
         {/*                 Why Choose Us                */}
         {/* ============================================ */}
-        <section id="why-choose-682">
+        <section id="why-choose-683">
           <div className="cs-container">
             {/* Left Section */}
             <div className="cs-image-group">
@@ -487,9 +483,7 @@ return (
             <div className="cs-content">
               <span className="cs-topper">THE 4EYES PHOTOGRAPHY EXPERIENCE</span>
               <h2 className="cs-title">we're proud to show off <span className="cs-color">our accomplishments</span></h2>
-              {'{'}# <p className="cs-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, pariatur:
-              </p> #{'}'}
+            
               <ul className="cs-ul">
                 <li className="cs-li">
                   <h3 className="cs-h3">
@@ -511,47 +505,7 @@ return (
               <a className="cs-button-solid" href="/contact">Contact Us</a>
             </div>
           </div>
-        </section>                               
-        {/* ============================================ */}
-        {/*                 Side By Side                 */}
-        {/* ============================================ */}
-        {'{'}# <section id="sbs-1461">
-          <div className="cs-container">
-            {/* Left Image Section */}
-            <div className="cs-image-group">
-              <picture className="cs-picture cs-picture1">
-                <source media="(max-width: 600px)" srcSet="https://4eyesphotography.ca/wp-content/uploads/2023/05/Feb23672_4Eyes_Winners_Badge.png" />
-                <source media="(min-width: 601px)" srcSet="https://4eyesphotography.ca/wp-content/uploads/2023/05/Feb23672_4Eyes_Winners_Badge.png" />
-                <img loading="lazy" decoding="async" src="https://4eyesphotography.ca/wp-content/uploads/2023/05/Feb23672_4Eyes_Winners_Badge.png" alt="wedding photography award" width={500} height={729} aria-hidden="true" />
-              </picture>
-              <picture className="cs-picture cs-picture2">
-                <source media="(max-width: 600px)" srcSet="https://4eyesphotography.ca/wp-content/uploads/2023/02/Banff-wedding-photographer-top25-2022.png" />
-                <source media="(min-width: 601px)" srcSet="https://4eyesphotography.ca/wp-content/uploads/2023/02/Banff-wedding-photographer-top25-2022.png" />
-                <img loading="lazy" decoding="async" src="https://4eyesphotography.ca/wp-content/uploads/2023/02/Banff-wedding-photographer-top25-2022.png" alt="wedding photography banff award" width={378} height={460} aria-hidden="true" />
-              </picture>
-            </div>
-            {/* Right Content Section*/}
-            <div className="cs-content">
-              <span className="cs-topper">the 4Eyes Photography experience</span>
-              <h2 className="cs-title">We're Proud to Show off our accomplishments</h2>
-              <p className="cs-text">
-                At 4Eyes Photography we've been recognized for our high quality wedding photography photos from multiple esteemed competitions          </p>
-              <ul className="cs-ul">
-                <li className="cs-li">TOP 25 International Wedding Photographers by Wedding Photojournalist Association</li>
-                <li className="cs-li">Best Fine Art Outdoor Wedding Photographer 2023 by Global Wedding Awards (LuxLife Magazine)</li>
-                <li className="cs-li">100+ photos qualified as winning photos</li>
-              </ul>
-              <a href="/contact" className="cs-button-solid">Get your wedding photographed</a>
-            </div>
-          </div>
-          <picture className="cs-background">
-            {/*Mobile Image*/}
-            <source media="(max-width: 600px)" srcSet="https://4eyesphotography.ca/wp-content/uploads/2024/04/Winter-Adventure-Wedding-Banff-6.JPG" />
-            {/*Tablet and above Image*/}
-            <source media="(min-width: 601px)" srcSet="https://4eyesphotography.ca/wp-content/uploads/2024/04/Winter-Adventure-Wedding-Banff-6.JPG" />
-            <img loading="lazy" decoding="async" src="https://4eyesphotography.ca/wp-content/uploads/2024/04/Winter-Adventure-Wedding-Banff-6.JPG" alt="banff wedding photography mountains" width={1280} height={568} />
-          </picture>
-        </section> #{'}'}
+        </section>              
         {/* ============================================ */}
         {/*                  Reviews                     */}
         {/* ============================================ */}

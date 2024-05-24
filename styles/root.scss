@@ -226,10 +226,10 @@
     margin: 0;
   }
 
-  p,
-  li {
-    color: #353535;
-  }
+  // p,
+  // li {
+  //   color: #353535;
+  // }
 
   a,
   button {
@@ -1697,7 +1697,11 @@ html {
 @media only screen and (min-width: 0rem) {
   #blog-986 {
     padding: var(--sectionPadding);
-    background-color: #1a1a1a;
+    background: url("https://4eyesphotography.ca/wp-content/uploads/2023/08/Wedding-at-Lake-Louise-Banff-3.JPG"),
+      rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
 
     .cs-container {
       width: 100%;
@@ -1865,7 +1869,7 @@ html {
         width: 100%;
         height: 100%;
         background: #1a1a1a;
-        opacity: 0.8;
+        opacity: 0.5;
         position: absolute;
         display: block;
         top: 0;

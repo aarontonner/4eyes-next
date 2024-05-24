@@ -65,7 +65,7 @@ export default function WinningPhotos() {
                   <source media="(min-width: 601px)" srcSet="
               https://4eyesphotography.ca/wp-content/uploads/2019/01/Calgary-Wedding-Photography-Award-Winning-Photo.jpg
             " />
-                  <img decoding="async" src="https://4eyesphotography.ca/wp-content/uploads/2019/01/Calgary-Wedding-Photography-Award-Winning-Photo.jpg" alt="award winning wedding photo" width={328} height={400} aria-hidden="true" loading="lazy" />
+                  <img decoding="async" src="https://4eyesphotography.ca/wp-content/uploads/2019/01/Calgary-Wedding-Photography-Award-Winning-Photo.jpg" alt="award winning wedding photo" width={600} height={400} aria-hidden="true" loading="lazy" />
                 </picture>
               </li>
               <li className="cs-item">
@@ -76,7 +76,7 @@ export default function WinningPhotos() {
                   <source media="(min-width: 601px)" srcSet="
               https://4eyesphotography.ca/wp-content/uploads/2019/01/best-wedding-photographer-canada.jpg
             " />
-                  <img decoding="async" src="https://4eyesphotography.ca/wp-content/uploads/2019/01/best-wedding-photographer-canada.jpg" alt="award winning wedding photo" width={328} height={400} aria-hidden="true" loading="lazy" />
+                  <img decoding="async" src="https://4eyesphotography.ca/wp-content/uploads/2019/01/best-wedding-photographer-canada.jpg" alt="award winning wedding photo" width={600} height={400} aria-hidden="true" loading="lazy" />
                 </picture>
               </li>
               <li className="cs-item">
@@ -87,7 +87,7 @@ export default function WinningPhotos() {
                   <source media="(min-width: 601px)" srcSet="
               https://4eyesphotography.ca/wp-content/uploads/2019/01/photo-of-the-week-fearless-photographers.jpg
             " />
-                  <img decoding="async" src="https://4eyesphotography.ca/wp-content/uploads/2019/01/photo-of-the-week-fearless-photographers.jpg" alt="award winning wedding portrait" width={328} height={400} aria-hidden="true" loading="lazy" />
+                  <img decoding="async" src="https://4eyesphotography.ca/wp-content/uploads/2019/01/photo-of-the-week-fearless-photographers.jpg" alt="award winning wedding portrait" width={600} height={400} aria-hidden="true" loading="lazy" />
                 </picture>
               </li>
               <li className="cs-item">
@@ -98,7 +98,7 @@ export default function WinningPhotos() {
                   <source media="(min-width: 601px)" srcSet="
               https://4eyesphotography.ca/wp-content/uploads/2019/01/fearless-photographers-award.jpg
             " />
-                  <img decoding="async" src="https://4eyesphotography.ca/wp-content/uploads/2019/01/fearless-photographers-award.jpg" alt="award winning wedding portrait" width={328} height={400} aria-hidden="true" loading="lazy" />
+                  <img decoding="async" src="https://4eyesphotography.ca/wp-content/uploads/2019/01/fearless-photographers-award.jpg" alt="award winning wedding portrait" width={600} height={400} aria-hidden="true" loading="lazy" />
                 </picture>
               </li>
               {/* The Modal/Lightbox */}
