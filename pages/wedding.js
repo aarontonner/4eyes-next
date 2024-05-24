@@ -7,10 +7,10 @@ export default function Wedding() {
         <div id="banner-559">
           <div className="cs-container">
             <span className="cs-int-topper">Capturing Love Stories</span>
-            <span className="cs-int-title">Wedding Portfolio</span>
+            <span className="cs-int-title">Wedding Moments</span>
             <div className="cs-breadcrumbs">
               <a href="/" className="cs-link">Home</a>
-              <a href="/wedding" className="cs-link cs-active">Wedding Portfolio</a>
+              <a href="/wedding" className="cs-link cs-active">Wedding Moments</a>
             </div>
           </div>
           {/*Background Image*/}
@@ -32,7 +32,7 @@ export default function Wedding() {
         <section id="content-1450">
           <div className="cs-container">
             <div className="cs-content">
-              <span className="cs-topper">Weddings</span>
+              <span className="cs-topper">Wedding Moments</span>
               <h2 className="cs-title">Step into a world of timeless romance</h2>
               <p className="cs-text">
                 There are no words to describe how important this day is for you, your

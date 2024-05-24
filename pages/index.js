@@ -588,7 +588,13 @@ return (
           </picture>
         </section>
         <RecentPosts />
-        <div className="elfsight-app-54b365a3-b593-472d-9662-326887486233" data-elfsight-app-lazy />
+        <section>
+          <container>
+<div class="elfsight-app-54b365a3-b593-472d-9662-326887486233" data-elfsight-app-lazy></div>
+<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+          </container>
+        </section>
+        
        
       </Layout>
     );

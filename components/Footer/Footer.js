@@ -15,9 +15,13 @@ export default function Footer() {
                  </li>
                  <li className="cs-li">
                    <a className="cs-link" href="/about">About</a>
-                 </li><li className="cs-li">
-                   <a className="cs-link" href="/testimonials">Testimonials</a>
                  </li>
+                 <li className="cs-li">
+                   <a className="cs-link" href="/investment">Investment</a>
+                 </li>
+                 {/* <li className="cs-li">
+                   <a className="cs-link" href="/testimonials">Testimonials</a>
+                 </li> */}
                  <li className="cs-li">
                    <a className="cs-link" href="/faq">FAQ</a>
                  </li>
@@ -38,7 +42,7 @@ export default function Footer() {
                 </li>
                 <li className="cs-social-li">
                     <a href="https://www.tiktok.com/@4eyesphotography" className="cs-social-link" aria-label="twitter" target="_blank" rel="noopener">
-                        <img className="cs-social-icon cs-default" src="../../assets/images/icons8-tiktok.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true"/>
+                        <img className="cs-social-icon cs-default" src="/../assets/images/icons8-tiktok.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true"/>
                     </a>
                 </li>
                 <li className="cs-social-li">

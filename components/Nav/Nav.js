@@ -55,10 +55,10 @@ export default function Nav() {
                   </span>
                   <ul className="cs-drop-ul">
                     <li className="cs-drop-li">
-                      <a href="/portraits" className="cs-li-link cs-drop-link">Portraits</a>
+                      <a href="/portraits" className="cs-li-link cs-drop-link">Wedding Portraits</a>
                     </li>
                     <li className="cs-drop-li">
-                      <a href="/wedding" className="cs-li-link cs-drop-link">Wedding</a>
+                      <a href="/wedding" className="cs-li-link cs-drop-link">Wedding moments</a>
                     </li>
                     <li className="cs-drop-li">
                       <a href="/engagement" className="cs-li-link cs-drop-link">Engagement</a>
@@ -77,6 +77,15 @@ export default function Nav() {
                     <li className="cs-drop-li">
                       <a href="/locations/calgary-wedding-photographers" className="cs-li-link cs-drop-link">Calgary</a>
                     </li>
+                    <li className="cs-drop-li">
+                      <a href="/locations/canmore-wedding-photographers" className="cs-li-link cs-drop-link">Canmore</a>
+                    </li>
+                    <li className="cs-drop-li">
+                      <a href="/locations/jasper-wedding-photographers" className="cs-li-link cs-drop-link">Jasper</a>
+                    </li>
+                    <li className="cs-drop-li">
+                      <a href="/locations/lake-louise-wedding-photographers" className="cs-li-link cs-drop-link">Lake Louise</a>
+                    </li>
                   </ul>
                 </li>
                 <li className="cs-li cs-dropdown" tabIndex={0}>
@@ -91,9 +100,9 @@ export default function Nav() {
                     <li className="cs-drop-li">
                       <a href="/investment" className="cs-li-link cs-drop-link">Investment</a>
                     </li>
-                    <li className="cs-drop-li">
+                    {/* <li className="cs-drop-li">
                       <a href="/testimonials" className="cs-li-link cs-drop-link">Testimonials</a>
-                    </li>
+                    </li> */}
                     <li className="cs-drop-li">
                       <a href="/faq" className="cs-li-link cs-drop-link">FAQ</a>
                     </li>
