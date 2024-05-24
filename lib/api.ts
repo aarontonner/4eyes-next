@@ -4,8 +4,9 @@ async function fetchAPI(query = "", { variables }: Record<string, any> = {}) {
   const headers = { "Content-Type": "application/json" };
 
   if (process.env.WORDPRESS_AUTH_REFRESH_TOKEN) {
-    headers["Authorization"] =
-      `Bearer ${process.env.WORDPRESS_AUTH_REFRESH_TOKEN}`;
+    headers[
+      "Authorization"
+    ] = `Bearer ${process.env.WORDPRESS_AUTH_REFRESH_TOKEN}`;
   }
 
   // WPGraphQL Plugin must be enabled
@@ -38,7 +39,7 @@ export async function getPreviewPost(id, idType = "DATABASE_ID") {
     }`,
     {
       variables: { id, idType },
-    },
+    }
   );
   return data.post;
 }
@@ -94,7 +95,7 @@ export async function getAllPostsForHome(preview) {
         onlyEnabled: !preview,
         preview,
       },
-    },
+    }
   );
 
   return data?.posts;
@@ -189,7 +190,7 @@ export async function getPostAndMorePosts(slug, preview, previewData) {
         id: isDraft ? postPreview.id : slug,
         idType: isDraft ? "DATABASE_ID" : "SLUG",
       },
-    },
+    }
   );
 
   // Draft posts may not have an slug
@@ -208,4 +209,219 @@ export async function getPostAndMorePosts(slug, preview, previewData) {
   if (data.posts.edges.length > 2) data.posts.edges.pop();
 
   return data;
+}
+
+export async function getWeddingPosts() {
+  const data = await fetchAPI(`
+    query single_page {
+    page(id: "cG9zdDo5MDUz") {
+      id
+      pageId
+      parent {
+        node {
+          id
+        }
+      }
+      slug
+      title
+      content
+      uri
+      extraFields {
+        bannerImage {
+          node {
+            altText
+            sourceUrl
+          }
+        }
+        blogGalleries {
+          nodes {
+            altText
+            sourceUrl
+          }
+        }
+      }
+      portfolioFields {
+        bannerHeading
+        portfolioType
+        contentTitle
+      }
+    }
+  }
+  `);
+  return data.page;
+}
+
+export async function getEngagementPosts() {
+  const data = await fetchAPI(`
+  query single_page {
+    page(id: "cG9zdDo5MDYx") {
+      id
+      pageId
+      parent {
+        node {
+          id
+        }
+      }
+      slug
+      title
+      content
+      uri
+      extraFields {
+        bannerImage {
+          node {
+            altText
+            sourceUrl
+          }
+        }
+        blogGalleries {
+          nodes {
+            altText
+            sourceUrl
+          }
+        }
+      }
+      portfolioFields {
+        bannerHeading
+        portfolioType
+        contentTitle
+      }
+    }
+  }
+  `);
+  return data.page;
+}
+
+export async function getPortraitPosts() {
+  const data = await fetchAPI(`
+  query single_page {
+    page(id: "cG9zdDo5MDc3") {
+      id
+      pageId
+      parent {
+        node {
+          id
+        }
+      }
+      slug
+      title
+      content
+      uri
+      extraFields {
+        bannerImage {
+          node {
+            altText
+            sourceUrl
+          }
+        }
+        blogGalleries {
+          nodes {
+            altText
+            sourceUrl
+          }
+        }
+      }
+      portfolioFields {
+        bannerHeading
+        portfolioType
+        contentTitle
+      }
+    }
+  }
+  `);
+  return data.page;
+}
+
+export async function getWinningPosts() {
+  const data = await fetchAPI(`
+  query single_page {
+    page(id: "cG9zdDo5MDY5") {
+      id
+      pageId
+      parent {
+        node {
+          id
+        }
+      }
+      slug
+      title
+      content
+      uri
+      extraFields {
+        bannerImage {
+          node {
+            altText
+            sourceUrl
+          }
+        }
+        blogGalleries {
+          nodes {
+            altText
+            sourceUrl
+          }
+        }
+      }
+      portfolioFields {
+        bannerHeading
+        portfolioType
+        contentTitle
+      }
+    }
+  }
+  `);
+  return data.page;
+}
+
+export async function getBlogPosts() {
+  const data = await fetchAPI(`
+  query all_blog {
+    posts(first: 1000) {
+      nodes {
+        id
+        postId
+        title
+        slug
+        uri
+        categories {
+          edges {
+            node {
+              id
+            }
+          }
+        }
+        status
+        date
+        extraFields {
+        bannerImage {
+          node {
+            altText
+            sourceUrl
+          }
+        }
+        blogGalleries {
+          nodes {
+            altText
+            sourceUrl
+          }
+        }
+      }
+        featuredImage {
+          node {
+            altText
+            sourceUrl
+          }
+        }
+        content
+        comments {
+          edges {
+            node {
+              id
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  `);
+  return data.posts;
 }
