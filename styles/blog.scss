@@ -16,8 +16,8 @@
   }
 
   .blog-container {
-    width: 94%;
-    max-width: calc(1120 / 16 * 1em);
+    width: 100%;
+    max-width: calc(1120 / 14.8 * 1em);
     margin: auto;
   }
 
@@ -82,7 +82,7 @@
       padding: clamp(100px, 14vw, 200px) 0 clamp(50px, 11vw, 100px);
     }
 
-    .blog-header {
+    .page-header .blog-header {
       font-size: clamp(24px, 4vw, 48px);
       font-weight: 700;
       line-height: 1.2em;
@@ -219,6 +219,114 @@
     background-attachment: fixed;
     padding-block-end: calc(100 / 16 * 1rem);
   }
+  .page-title-container {
+    width: 80%;
+    margin: auto;
+  }
+  .entry-title {
+    color: #f7f7f7;
+    font-weight: 700;
+  }
+  // .single-1 {
+  //   margin-bottom: 30px;
+  // }
+  // .single .blog.single .image,
+  // body.blog .blog.item .image,
+  // .archive .blog.item .image {
+  //   position: relative;
+  //   z-index: 2;
+  //   overflow: hidden;
+  // }
+
+  .container {
+    position: relative;
+    width: 400px;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container:before {
+    /* empty pseudo */
+    content: "";
+
+    /* start transparent, include a transition bcuz */
+    opacity: 0;
+    transition: opacity 0.5s ease;
+
+    /* covers the whole div */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+  }
+  .container:hover:before {
+    opacity: 1;
+  }
+  .container img {
+    position: absolute;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    z-index: 1;
+  }
+
+  .see-more {
+    opacity: 0;
+    color: white;
+    transition: opacity 0.5s ease;
+    position: relative;
+    padding: 0 40px;
+    height: 40px;
+    line-height: 40px;
+    max-width: 260px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #d7ae6b;
+    border: none;
+    z-index: 3;
+  }
+  .container:hover .see-more {
+    opacity: 1;
+  }
+  .entry-date-author {
+    padding: 15px 0px;
+    font-size: 0.8rem;
+    color: #777777;
+  }
+  .entry-excerpt {
+    // opacity: 0.85;
+    margin-top: 5px;
+    font-size: 15px;
+    color: #515151;
+    overflow: hidden;
+    width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+
+    text-overflow: ellipsis;
+  }
+  .blog-title {
+    padding-top: 30px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #d7ae6b;
+  }
+  .detail {
+    padding-top: 30px;
+    padding-right: 30px;
+  }
+  .blog-h1 {
+    text-align: center;
+    font-size: 32px;
+    padding: 32px;
+    border-bottom: 1px solid;
+    color: var(--primary);
+  }
 }
 
 /*-- -------------------------- -->
@@ -228,7 +336,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
   .blog-container {
-    padding: clamp(60px, 7vw, 100px) 0;
+    padding: clamp(60px, 3vw, 100px) 0;
   }
 
   .main-content-wrapper {
@@ -341,6 +449,9 @@
       line-height: 1.4em;
       margin: calc(16 / 16 * 1rem) 0;
       color: var(--headerColor);
+    }
+    .entry-date_author {
+      padding: 15px;
     }
 
     .blog-desc {
@@ -937,4 +1048,12 @@
       bottom: auto;
     }
   }
+}
+
+.row {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
 }
