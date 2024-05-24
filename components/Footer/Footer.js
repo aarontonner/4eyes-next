@@ -32,19 +32,22 @@ export default function Footer() {
               </a>
             </li>
             <li className="cs-li">
-              <a className="cs-link" href="/testimonials">
-                Testimonials
+              <a className="cs-link" href="/investment">
+                Investment
               </a>
             </li>
+            {/* <li className="cs-li">
+                   <a className="cs-link" href="/testimonials">Testimonials</a>
+                 </li> */}
             <li className="cs-li">
               <a className="cs-link" href="/faq">
                 FAQ
               </a>
             </li>
             <li className="cs-li">
-              <Link className="cs-link" href="/blog ">
+              <a className="cs-link" href="/blog">
                 Blog
-              </Link>
+              </a>
             </li>
             <li className="cs-li">
               <a className="cs-link" href="/contact">
@@ -85,7 +88,7 @@ export default function Footer() {
               >
                 <img
                   className="cs-social-icon cs-default"
-                  src="../../assets/images/icons8-tiktok.svg"
+                  src="/../assets/images/icons8-tiktok.svg"
                   alt="icon"
                   loading="lazy"
                   decoding="async"

@@ -49,7 +49,7 @@ export default function Portfolio() {
                 </picture>
               </li>
               <li className="cs-item">
-                <a href="/weddings" className="cs-link">
+                <a href="/wedding" className="cs-link">
                   <h3 className="cs-h3 cs-hover-text">Wedding Moments</h3>
                 </a>
                 <picture className="cs-picture">
@@ -63,7 +63,7 @@ export default function Portfolio() {
                 </picture>
               </li>
               <li className="cs-item">
-                <a href="/engagements" className="cs-link">
+                <a href="/engagement" className="cs-link">
                   <h3 className="cs-h3 cs-hover-text">Engagements</h3>
                 </a>
                 <picture className="cs-picture">

@@ -28,7 +28,7 @@ export default function Calgary() {
             <source media="(min-width: 601px)" srcSet="
         https://4eyesphotography.ca/wp-content/uploads/2024/03/Canadian-Farm-Wedding-In-Calgary-30.JPG
       " />
-            <img loading="lazy" decoding="async" src="https://4eyesphotography.ca/wp-content/uploads/2024/03/Canadian-Farm-Wedding-In-Calgary-30.JPG" alt="calagry wedding photographers" width={1280} height={568} aria-hidden="true" />
+            <img loading="lazy" decoding="async" src="https://4eyesphotography.ca/wp-content/uploads/2024/03/Canadian-Farm-Wedding-In-Calgary-30.JPG" alt="calgary wedding photographers" width={1280} height={568} aria-hidden="true" />
           </picture>
         </div>
         {/* ============================================ */}
