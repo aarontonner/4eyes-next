@@ -1,9 +1,12 @@
 import Image from "next/image";
 import Layout from "../components/layout";
 import { getBlogPosts } from "../lib/api";
+import { useRouter } from "next/router";
+import Link from "next/link";
 
 export const getStaticProps = async () => {
   const data = await getBlogPosts();
+
   return {
     props: {
       data,
@@ -57,50 +60,19 @@ export default function Blog({ data }) {
           {data?.nodes?.map((item) => {
             return (
               <div className="col-12 col-md-4">
-                {/* <div className="blog item single-1">
-                  <div className="image img">
-                    <a
-                      href="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"
-                      title="Planning A Surprise Proposal In Banff"
-                    >
-                      <img
-                        className="d-block w-100"
-                        alt="Planning A Surprise Proposal In Banff"
-                        loading="lazy"
-                        width={200}
-                        src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg "
-                      />
-                      <div className="button">See more</div>
-                    </a>
-                  </div>
-                  <div className="detail">
-                    <div className="entry_title_con">
-                      <h3 className="entry-title">
-                        <a
-                          href="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"
-                          title="Planning A Surprise Proposal In Banff"
-                        >
-                          {item?.title}
-                        </a>
-                      </h3>
-                    </div>
-                    <div className="entry-date_author">{item?.date}</div>
-                    <div className="entry-excerpt">
-                      {item?.content?.replace(/<\/?[^>]+(>|$)/g, "")}
-                    </div>
-                  </div>
-                  <div className="clear"></div>
-                </div> */}
                 <div className="blog-content">
                   <div className="container">
                     <img
-                      // src={item?.extraFields?.bannerImage?.node?.searchUrl}
-                      //
-                      src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"
+                      src={
+                        item?.extraFields?.bannerImage?.node?.sourceUrl ||
+                        "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"
+                      }
                       alt="Snow"
                     />
                     <button type="button" className="see-more">
-                      See more
+                      <Link className="see-more" href={item?.slug}>
+                        See More
+                      </Link>
                     </button>
                   </div>
                   <p className="blog-title">{item?.title}</p>
@@ -108,7 +80,7 @@ export default function Blog({ data }) {
                     {new Date(item?.date).toLocaleDateString("en-GB", options)}
                   </p>
                   <p className="entry-excerpt">
-                    {item?.content?.replace(/(<([^>]+)>)/gi, "")}
+                    {item?.content?.replace(/(<([^>]+)>|&nbsp;)/gi, "")}
                   </p>
                 </div>
               </div>
