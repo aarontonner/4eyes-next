@@ -77,9 +77,12 @@ export default function ContentCard({ data }) {
           <div className="cs-content">
             <span className="cs-topper">{title}</span>
             <h2 className="cs-title">{contentTitle}</h2>
-            <p className="cs-text">
-              {content?.replace(/(<([^>]+)>|&nbsp;)/gi, "")}
-            </p>
+            <div
+              className="cs-text"
+              dangerouslySetInnerHTML={{ __html: content }}
+            />
+            {/* {content?.replace(/(<([^>]+)>|&nbsp;)/gi, "")} */}
+            {/* </p> */}
             <a href="/contact" className="cs-button-solid">
               Contact us
             </a>

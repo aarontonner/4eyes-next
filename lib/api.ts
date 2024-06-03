@@ -372,8 +372,24 @@ export async function getWinningPosts() {
 }
 
 export async function getBlogPosts() {
-  const data = await fetchAPI(`
-  query all_blog {
+  const data = await fetchAPI(`query all_blog {
+    page(id: "cG9zdDo5MDk1") {
+      bannerImage {
+        banner {
+          node {
+            id
+          }
+        }
+      }
+      extraFields {
+        bannerImage {
+          node {
+            altText
+            sourceUrl
+          }
+        }
+      }
+    }
     posts(first: 1000) {
       nodes {
         id
@@ -391,19 +407,19 @@ export async function getBlogPosts() {
         status
         date
         extraFields {
-        bannerImage {
-          node {
-            altText
-            sourceUrl
+          bannerImage {
+            node {
+              altText
+              sourceUrl
+            }
+          }
+          blogGalleries {
+            nodes {
+              altText
+              sourceUrl
+            }
           }
         }
-        blogGalleries {
-          nodes {
-            altText
-            sourceUrl
-          }
-        }
-      }
         featuredImage {
           node {
             altText
@@ -421,7 +437,64 @@ export async function getBlogPosts() {
       }
     }
   }
-  
   `);
-  return data.posts;
+  return data;
+}
+
+export async function getSingleBlog(id) {
+  const data = await fetchAPI(`
+  query single_post {
+    post(id: "${id}") {
+      id
+      postId
+      title
+      slug
+      uri
+      categories {
+        edges {
+          node {
+            id
+          }
+        }
+      }
+      status
+      date
+      extraFields {
+        bannerImage {
+          node {
+            altText
+            sourceUrl
+          }
+        }
+        blogGalleries {
+          nodes {
+            altText
+            sourceUrl
+          }
+        }
+      }
+      featuredImage {
+        node {
+          altText
+          sourceUrl
+        }
+      }
+      content
+      tags {
+        nodes {
+          name
+          link
+        }
+      }
+      comments {
+        edges {
+          node {
+            id
+          }
+        }
+      }
+    }
+  }
+  `);
+  return data;
 }

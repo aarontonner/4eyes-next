@@ -12,6 +12,7 @@ import "../styles/pricing.scss";
 import "../styles/services.scss";
 import "../styles/hero.scss";
 import "../styles/blog.scss";
+import "../styles/blog-gallery.scss";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 

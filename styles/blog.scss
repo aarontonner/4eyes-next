@@ -272,10 +272,10 @@
     color: white;
     transition: opacity 0.5s ease;
     position: relative;
-    padding: 0 40px;
+    padding: 12 24px;
     height: 40px;
     line-height: 40px;
-    max-width: 200px;
+    min-width: 160px;
     font-weight: 700;
     cursor: pointer;
     background-color: #d7ae6b;
@@ -395,10 +395,10 @@
     color: white;
     transition: opacity 0.5s ease;
     position: relative;
-    padding: 0 40px;
+    padding: 12 24px;
     height: 40px;
     line-height: 40px;
-    max-width: 260px;
+    min-width: 160px;
     font-weight: 700;
     cursor: pointer;
     background-color: #d7ae6b;
@@ -956,6 +956,14 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
+  #banner-559 {
+    padding: var(--sectionPadding);
+    padding-top: clamp(12.5625rem, 25vw, 17.25rem);
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    height: 540px !important;
+  }
   #cs-footer {
     font-family: "Roboto", "Arial", sans-serif;
     /* 60px - 100px top and bottom */

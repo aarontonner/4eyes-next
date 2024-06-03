@@ -21,6 +21,7 @@ module.exports = {
       "secure.gravatar.com",
       "source.unsplash.com",
       "https://4eyesphotography.ca",
+      "https://4eyesphotography.ca/wp-content/uploads",
     ],
     remotePatterns: [
       {
