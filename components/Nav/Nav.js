@@ -128,6 +128,30 @@ export default function Nav() {
                       Calgary
                     </a>
                   </li>
+                  <li className="cs-drop-li">
+                    <a
+                      href="/locations/canmore-wedding-photographers"
+                      className="cs-li-link cs-drop-link"
+                    >
+                      Canmore
+                    </a>
+                  </li>
+                  <li className="cs-drop-li">
+                    <a
+                      href="/locations/jasper-wedding-photographers"
+                      className="cs-li-link cs-drop-link"
+                    >
+                      Jasper
+                    </a>
+                  </li>
+                  <li className="cs-drop-li">
+                    <a
+                      href="/locations/lake-louise-wedding-photographers"
+                      className="cs-li-link cs-drop-link"
+                    >
+                      Lake Louise
+                    </a>
+                  </li>
                 </ul>
               </li>
               <li className="cs-li cs-dropdown" tabIndex={0}>

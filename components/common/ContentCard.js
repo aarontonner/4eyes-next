@@ -1,5 +1,5 @@
 import Layout from "../layout";
-import Seo from "../Seo";
+import Seo from "../seo"
 
 export default function ContentCard({ data }) {
   const {
