@@ -1,7 +1,12 @@
+import { useState } from "react";
 import Layout from "../layout";
 import Seo from "../Seo";
+import ImageLightbox from "./Lightbox";
 
 export default function ContentCard({ data }) {
+  const [isOpenLightBox, setIsOpenLightBox] = useState(false);
+  const [index, setIndex] = useState(0);
+
   const {
     extraFields: {
       bannerImage,
@@ -11,6 +16,17 @@ export default function ContentCard({ data }) {
     title,
     portfolioFields: { bannerHeading, contentTitle },
   } = data || {};
+  if (isOpenLightBox) {
+    return (
+      <ImageLightbox
+        isOpen={isOpenLightBox}
+        setIsOpen={setIsOpenLightBox}
+        images={nodes}
+        index={index}
+      />
+    );
+  }
+
   return (
     <Layout>
       <Seo
@@ -61,7 +77,12 @@ export default function ContentCard({ data }) {
           <div className="cs-content">
             <span className="cs-topper">{title}</span>
             <h2 className="cs-title">{contentTitle}</h2>
-            <p className="cs-text">{content?.replace(/<\/?[^>]+(>|$)/g, "")}</p>
+            <div
+              className="cs-text"
+              dangerouslySetInnerHTML={{ __html: content }}
+            />
+            {/* {content?.replace(/(<([^>]+)>|&nbsp;)/gi, "")} */}
+            {/* </p> */}
             <a href="/contact" className="cs-button-solid">
               Contact us
             </a>
@@ -74,10 +95,16 @@ export default function ContentCard({ data }) {
       <section id="gallery-1752">
         <div className="cs-container">
           <ul className="cs-card-group">
-            {nodes?.map((img) => {
+            {nodes?.map((img, i) => {
               return (
-                <li className="cs-item">
-                  <picture className="cs-picture">
+                <li className="cs-item" key={i}>
+                  <picture
+                    className="cs-picture "
+                    onClick={() => {
+                      setIndex(i);
+                      setIsOpenLightBox(true);
+                    }}
+                  >
                     <source
                       media="(max-width: 600px)"
                       srcSet={img?.sourceUrl}
@@ -99,82 +126,6 @@ export default function ContentCard({ data }) {
                 </li>
               );
             })}
-
-            {/* <li className="cs-item">
-                <picture className="cs-picture">
-                  <source
-                    media="(max-width: 600px)"
-                    srcSet="
-                https://4eyesphotography.ca/wp-content/uploads/2020/12/Banff-Wedding-Photography-5.JPG
-              "
-                  />
-                  <source
-                    media="(min-width: 601px)"
-                    srcSet="
-                https://4eyesphotography.ca/wp-content/uploads/2020/12/Banff-Wedding-Photography-5.JPG
-              "
-                  />
-                  <img
-                    decoding="async"
-                    src="https://4eyesphotography.ca/wp-content/uploads/2020/12/Banff-Wedding-Photography-5.JPG"
-                    alt="wedding photo in banff"
-                    width={328}
-                    height={400}
-                    aria-hidden="true"
-                    loading="lazy"
-                  />
-                </picture>
-              </li>
-              <li className="cs-item">
-                <picture className="cs-picture">
-                  <source
-                    media="(max-width: 600px)"
-                    srcSet="
-                https://4eyesphotography.ca/wp-content/uploads/2020/12/002Calgary-Wedding-Photographer-1.JPG
-              "
-                  />
-                  <source
-                    media="(min-width: 601px)"
-                    srcSet="
-                https://4eyesphotography.ca/wp-content/uploads/2020/12/002Calgary-Wedding-Photographer-1.JPG
-              "
-                  />
-                  <img
-                    decoding="async"
-                    src="https://4eyesphotography.ca/wp-content/uploads/2020/12/002Calgary-Wedding-Photographer-1.JPG"
-                    alt="wedding photo in calgary"
-                    width={328}
-                    height={400}
-                    aria-hidden="true"
-                    loading="lazy"
-                  />
-                </picture>
-              </li>
-              <li className="cs-item">
-                <picture className="cs-picture">
-                  <source
-                    media="(max-width: 600px)"
-                    srcSet="
-                https://4eyesphotography.ca/wp-content/uploads/2020/12/Calgary-Wedding-Photography-1-1.JPG
-              "
-                  />
-                  <source
-                    media="(min-width: 601px)"
-                    srcSet="
-                https://4eyesphotography.ca/wp-content/uploads/2020/12/Calgary-Wedding-Photography-1-1.JPG
-              "
-                  />
-                  <img
-                    decoding="async"
-                    src="https://4eyesphotography.ca/wp-content/uploads/2020/12/Calgary-Wedding-Photography-1-1.JPG"
-                    alt="wedding photo in calgary"
-                    width={328}
-                    height={400}
-                    aria-hidden="true"
-                    loading="lazy"
-                  />
-                </picture>
-              </li> */}
           </ul>
         </div>
       </section>

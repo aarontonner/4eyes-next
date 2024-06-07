@@ -6,7 +6,7 @@ if (!URL.canParse(process.env.WORDPRESS_API_URL)) {
 }
 
 const { protocol, hostname, port, pathname } = new URL(
-  process.env.WORDPRESS_API_URL,
+  process.env.WORDPRESS_API_URL
 );
 
 /** @type {import('next').NextConfig} */
@@ -19,6 +19,9 @@ module.exports = {
       "1.gravatar.com",
       "2.gravatar.com",
       "secure.gravatar.com",
+      "source.unsplash.com",
+      "https://4eyesphotography.ca",
+      "https://4eyesphotography.ca/wp-content/uploads",
     ],
     remotePatterns: [
       {
