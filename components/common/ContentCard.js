@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Layout from "../layout";
-import Seo from "../Seo";
+import Seo from "../seo";
+import ImageLightbox from "./Lightbox";
 
 export default function ContentCard({ data }) {
   const [isOpenLightBox, setIsOpenLightBox] = useState(false);

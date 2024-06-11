@@ -79,8 +79,8 @@ export default function Nav() {
                 </span>
                 <ul className="cs-drop-ul">
                   <li className="cs-drop-li">
-                    <Link className="cs-li-link cs-drop-link" href="/portfolio">
-                      Portfolio
+                    <Link className="cs-li-link cs-drop-link" href="/portraits">
+                      Portraits
                     </Link>
                   </li>
                   <li className="cs-drop-li">
