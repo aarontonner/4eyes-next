@@ -4,7 +4,7 @@ export default function RecentPosts() {
     <div class="cs-container">
         <div class="cs-content">
             <div class="cs-flex">
-                <span class="cs-topper">from the 4 Eyes Blog</span>
+                <span class="cs-topper">from the 4Eyes Blog</span>
                 <h2 class="cs-title">Our Popular Posts</h2>
             </div>
             <a href="/blog" class="cs-button-solid">View All</a>

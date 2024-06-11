@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Form from "../components/Form/Form";
 import Layout from "../components/layout";
 import Seo from "../components/seo"
@@ -54,7 +55,7 @@ export default function About() {
               <p className="cs-text">
                 Hi Guys! Eliza and Lukas here. Together we run 4Eyes Photography - a
                 multi-awarded husband and wife team offering finest Wedding and
-                Adventure Photography services in Banff, Lake Louise, Calgary, Canmore,
+                Adventure Photography services in <Link href="/">Banff</Link>, <Link href="/locations/calgary-wedding-photographers">Calgary</Link>, <Link href="/locations/canmore-wedding-photographers">Canmore</Link>, <Link href="/locations/jasper-wedding-photographers">Jasper</Link>, <Link href="/locations/lake-louise-wedding-photographers">Lake Louise</Link>,
                 Kananaskis and beyond.
               </p>
               <ul className="cs-stats">
@@ -127,7 +128,7 @@ export default function About() {
               <p className="cs-text">
                 She also pays attention to every freaking detail. It drives me crazy
                 sometimes. Who else would have cared if I had left my socks on the
-                floor? Right... ? But when it comes to photography, especially the
+                floor? Right... ? But when it comes to <Link href="/">wedding photography</Link>, especially the
                 editing part - her obsession to details is priceless. She’s pure
                 gold.<br />People love her, I love her, and you’re gonna love her too. -
                 Lukas
@@ -180,7 +181,7 @@ export default function About() {
                 artist.
               </p>
               <p className="cs-text">
-                I must admit, my personal life and our photography adventure would not
+                I must admit, my personal life and our <Link href="/">photography adventure</Link> would not
                 be the same without Lukas. His cheerful personality and hard work
                 perfectly contribute to our marriage and photography business. - Eliza
               </p>
@@ -244,7 +245,7 @@ export default function About() {
                 <li className="cs-li">
                   <h3 className="cs-h3">Unleashing Creative Brilliance</h3>
                   <p className="cs-item-text">
-                    At 4Eyes Photography, creativity is our driving force. When we're
+                    At <Link href="/">4Eyes Photography</Link>, creativity is our driving force. When we're
                     not behind the lens, we're brainstorming innovative ideas to elevate
                     our wedding photography to new heights.
                   </p>
@@ -253,7 +254,7 @@ export default function About() {
                   <h3 className="cs-h3">Immersive Storytelling</h3>
                   <p className="cs-item-text">
                     We immerse ourselves in your special day, seamlessly blending into
-                    the background to capture authentic emotions and candid moments.
+                    the background to capture authentic emotions and candid <Link href="/wedding">wedding moments</Link>.
                     From laughter to tears of joy, we're there every step of the way,
                     ensuring your wedding memories are preserved with genuine sincerity.
                   </p>
@@ -261,7 +262,7 @@ export default function About() {
                 <li className="cs-li">
                   <h3 className="cs-h3">Wanderlust Adventures</h3>
                   <p className="cs-item-text">
-                    From Banff to Calgary and beyond, we travel far and wide to capture
+                    From <Link href="/">Banff</Link> to <Link href="/locations/calgary-wedding-photographers">Calgary</Link> and beyond, we travel far and wide to capture
                     your love story in stunning detail. No destination is too far, no
                     adventure too grand for us to embark on.
                   </p>

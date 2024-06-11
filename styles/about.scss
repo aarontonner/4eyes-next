@@ -7,7 +7,7 @@
   #sbs-r-1884 {
     width: 100%;
     padding: var(--sectionPadding);
-    background-color: #faf6f2;
+    // background-color: #faf6f2;
     overflow: clip;
     display: flex;
     flex-direction: column;
@@ -176,7 +176,7 @@
 
     .cs-logo {
       width: auto;
-      height: calc(40 / 16 * 1rem);
+
       object-fit: contain;
     }
   }

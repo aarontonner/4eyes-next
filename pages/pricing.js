@@ -4,10 +4,10 @@ import Seo from "../components/seo"
 export default function Pricing() {
     return (
       <Layout>
-        <Seo title="Wedding Photography Pricing | 4 Eyes Photography" description="View our pricing here." />
+        <Seo title="Wedding Photography Pricing | 4Eyes Photography" description="View our pricing here." />
         <div id="banner-559">
           <div className="cs-container">
-            <span className="cs-int-topper">welcome to 4 eyes photography</span>
+            <span className="cs-int-topper">welcome to 4eyes photography</span>
             <span className="cs-int-title">All Pricing Packages</span>
             <div className="cs-breadcrumbs">
               <a href="/" className="cs-link">Home</a>
@@ -33,7 +33,7 @@ export default function Pricing() {
         <section id="why-choose-1710">
           <div className="cs-container">
             <div className="cs-content">
-               <span className="cs-topper">BUT WAIT... There's more...</span> 
+               <span className="cs-topper">everything you need for you special day</span> 
               <h2 className="cs-title">wedding package inclusives</h2>
             </div>
             <div className="cs-wrapper">

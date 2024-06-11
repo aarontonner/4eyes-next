@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="cs-top">
           <a aria-label="go back to home" className="cs-logo" href="">
             <img
-              src="https://4eyesphotography.ca/wp-content/uploads/2022/11/4EyesPhotography_logo2021_RGB_LQ_darkBG.jpg"
+              src="https://4eyesphotography.ca/wp-content/uploads/2021/10/Banff_and_calgary_wedding_photographers.svg"
               alt="wedding photographer logo"
               width={100}
               height={52.5}

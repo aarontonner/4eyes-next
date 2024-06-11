@@ -3,7 +3,7 @@ export default function Featured() {
 <section id="gallery-1234">
     <div class="cs-container">
         <div class="cs-content">
-            <span class="cs-topper">The 4 Eyes Experience</span>
+            <span class="cs-topper">The 4Eyes Experience</span>
             <h2 class="cs-title">capturing the essence of your special day</h2>
             <p class="cs-text italics">
                 "Lukas and Eliza captured the essence of our special day and the photos we received were all beautiful, emotional and heartwarming. We highly recommend the Perfect Duo, over and over again!" ~Claudia
@@ -66,10 +66,10 @@ export default function Featured() {
                 </picture>
                 <picture class="cs-picture cs-picture2">
                     
-                    <source media="(max-width: 600px)" srcset="https://4eyesphotography.ca/wp-content/uploads/2024/04/Calgary-Wedding-Photographs-18.JPG"/>
+                    <source media="(max-width: 600px)" srcset="http://www.4eyes.purpleparrotwebsites.com/wp-content/uploads/2024/05/002Calgary-Wedding-Photographer.webp"/>
                     
-                    <source media="(min-width: 601px)" srcset="https://4eyesphotography.ca/wp-content/uploads/2024/04/Calgary-Wedding-Photographs-18.JPG"/>
-                    <img loading="lazy" decoding="async" src="https://4eyesphotography.ca/wp-content/uploads/2024/04/Calgary-Wedding-Photographs-18.JPG" alt="banff wedding photography" width="360" height="240"/>
+                    <source media="(min-width: 601px)" srcset="http://www.4eyes.purpleparrotwebsites.com/wp-content/uploads/2024/05/002Calgary-Wedding-Photographer.webp"/>
+                    <img loading="lazy" decoding="async" src="http://www.4eyes.purpleparrotwebsites.com/wp-content/uploads/2024/05/002Calgary-Wedding-Photographer.webp" alt="banff wedding photography" width="360" height="240"/>
                 </picture>
             </div>
         </div>

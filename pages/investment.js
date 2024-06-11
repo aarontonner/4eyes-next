@@ -1,6 +1,7 @@
 import Layout from "../components/layout";
 import Form from "../components/Form/Form"
 import Seo from "../components/seo"
+import Link from "next/link";
 
 // import "../styles/investment.scss"
 export default function Investment() {
@@ -78,8 +79,8 @@ export default function Investment() {
               <span className="cs-topper">4Eyes Photography</span>
               <h2 className="cs-title">Your Investment in us</h2>
               <p className="cs-text">What sets us apart is our dedication to crafting unforgettable memories in unique and awe-inspiring locations. We don't just photograph weddings; we embark on adventures with our couples, scaling mountains and traversing valleys to capture images that are as extraordinary as your love story.</p>
-              <p className="cs-text">At 4Eyes Photography, we understand that every couple is unique, and so are their wedding photography needs. That's why we offer custom packages tailored to your vision and budget. From intimate elopements to grand celebrations, we work closely with you to ensure every detail is perfect.</p>
-              <p className="cs-text">We welcome the opportunity to discuss your dream photo session further. Whether you envision a romantic mountain elopement or a whimsical engagement shoot, let's start the conversation. Our flexibility knows no bounds, and we're committed to creating a package that exceeds your expectations.
+              <p className="cs-text">At <Link href="/">4Eyes Photography</Link>, we understand that every couple is unique, and so are their wedding photography needs. That's why we offer custom packages tailored to your vision and budget. From intimate elopements to grand celebrations, we work closely with you to ensure every detail is perfect.</p>
+              <p className="cs-text">We welcome the opportunity to discuss your dream photo session further. Whether you envision a romantic <Link href="/">mountain elopement</Link> or a whimsical <Link href="/engagement">engagement</Link> shoot, let's start the conversation. Our flexibility knows no bounds, and we're committed to creating a package that exceeds your expectations.
               </p>
               <ul className="cs-list">
                 <li className="cs-li">With years of experience capturing love stories in Alberta's most stunning locations, we bring a level of expertise and artistry that sets us apart.</li>

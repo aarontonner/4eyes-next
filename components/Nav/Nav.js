@@ -36,13 +36,14 @@ export default function Nav() {
         {/*Nav Logo*/}
         <a href="/" className="cs-logo" aria-label="back to home">
           <img
-            src="https://4eyesphotography.ca/wp-content/uploads/2022/11/4EyesPhotography_logo2021_RGB_LQ_darkBG.jpg"
+            src="https://4eyesphotography.ca/wp-content/uploads/2021/10/Banff_and_calgary_wedding_photographers.svg"
             alt="wedding photographer logo"
             width={400}
             height={210}
             aria-hidden="true"
             decoding="async"
           />
+          
         </a>
         {/*Navigation List*/}
         <nav className="cs-nav" role="navigation">
@@ -178,11 +179,11 @@ export default function Nav() {
                       Investment
                     </a>
                   </li>
-                  <li className="cs-drop-li">
+                  {/* <li className="cs-drop-li">
                     <a href="/testimonials" className="cs-li-link cs-drop-link">
                       Testimonials
                     </a>
-                  </li>
+                  </li> */}
                   <li className="cs-drop-li">
                     <a href="/faq" className="cs-li-link cs-drop-link">
                       FAQ

@@ -7,10 +7,10 @@ import Seo from "../../components/seo"
 export default function Jasper() {
     return (
       <Layout>
-        <Seo title="Jasper Wedding Photographers | 4 Eyes Photography" description="Your Jasper wedding photographers!" />
+        <Seo title="Jasper Wedding Photographers | 4Eyes Photography" description="Your Jasper wedding photographers!" />
         <div id="banner-559">
           <div className="cs-container">
-            <span className="cs-int-topper">4 Eyes Photography</span>
+            <span className="cs-int-topper">4Eyes Photography</span>
             <span className="cs-int-title">Jasper Wedding Photography</span>
             <div className="cs-breadcrumbs">
               <a href="/" className="cs-link">Home</a>

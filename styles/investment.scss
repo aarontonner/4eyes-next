@@ -221,6 +221,11 @@
 @media only screen and (min-width: 0rem) {
   #services-280 {
     padding: var(--sectionPadding);
+    background: url("https://4eyesphotography.ca/wp-content/uploads/2023/12/Banff-Adventure-Photography-1.JPG"),
+      rgba(0, 0, 0, 0.3);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     .cs-container {
       width: 100%;

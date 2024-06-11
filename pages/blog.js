@@ -2,6 +2,7 @@ import Layout from "../components/layout";
 import { getBlogPosts } from "../lib/api";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Seo from "../components/seo";
 
 export const OPTIONS = { day: "numeric", month: "long", year: "numeric" };
 
@@ -18,6 +19,7 @@ export default function Blog({ data }) {
   const { extraFields } = data.page;
   return (
     <Layout>
+      <Seo title="Blog | 4Eyes Photography" description="Welcome to our blog!" />
       <div id="banner-559">
         {/*Background Image*/}
         <picture className="cs-background">
@@ -48,7 +50,7 @@ export default function Blog({ data }) {
           <div className="row">
             <div className="col-12">
               <div className="page-title">
-                <h1 className="blog-h1">Blog</h1>
+                <h1 className="blog-h1">Welcome to the 4Eyes Blog</h1>
               </div>
             </div>
           </div>

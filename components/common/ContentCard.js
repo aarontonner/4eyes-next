@@ -41,8 +41,8 @@ export default function ContentCard({ data }) {
             <a href="/" className="cs-link">
               Home
             </a>
-            <a href="/wedding" className="cs-link cs-active">
-              {title}
+            <a href="/portfolio" className="cs-link cs-active">
+              Portfolios
             </a>
           </div>
         </div>

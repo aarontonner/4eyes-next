@@ -19,6 +19,30 @@ const faqData = [
     answer:
       "– Two creative, professional photographers, – Private, online Art Gallery, – Printing rights for personal use, – Fully and professionally edited images, – Web-size and high-res digital downloads, – Slideshow to share with your family and friends, – Required Park permits + licenses – No extra travel fees for Banff National Park, Kananaskis Country, Canmore, or the Calgary area,",
   },
+  {
+    question: "Who will photograph our wedding?",
+    answer: "Eliza and Lukas will capture your Big Day – Eliza and Lukas – your new friends with the cameras. Friends that happened to be internationally acclaimed wedding photographers. We always photograph together to ensure we will not miss any important moments during your special day.",
+  },
+  {
+    question: "Will you personally be editing our photos?",
+    answer: "Yes, yes, yes! Editing photographs is a crucial part of our approach to wedding photography. We carefully select and edit each chosen photo to ensure you receive the best.",
+  },
+  {
+    question: "When will you deliver our photos?",
+    answer: "We want to impress you with a sneak peek within 7 days after your wedding. The full web gallery, and slideshow will be sent to you in a time frame of 12 – 16 weeks.",
+  },
+  {
+    question: "How can we save the date?",
+    answer: "After choosing the offer which suits your needs and expectations, a photography contract is prepared for you to read and sign. We ask for a retainer of $1000 to secure your date. The remaining balance should be paid one week before your special day.",
+  },
+  {
+    question: "Do you have backup equipment?",
+    answer: "We always carry extra cameras, memory cards and other equipment.",
+  },
+  {
+    question: "Do you have insurance coverage?",
+    answer: "Yes, we have commercial general liability insurance, and our equipment is also insured.",
+  },
   // Add more FAQ items as needed
 ];
 

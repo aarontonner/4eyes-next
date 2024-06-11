@@ -1,3 +1,4 @@
+import Link from "next/link";
 import HeroSlider from "../components/Hero/Hero";
 import Hero from "../components/Hero/Hero";
 import RecentPosts from "../components/RecentPosts/RecentPosts";
@@ -103,9 +104,6 @@ return (
           <img className="cs-graphic cs-light" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-video-dark-graphic.svg" alt="graphic" height={161} width={1920} loading="lazy" decoding="async" />
           <img className="cs-graphic cs-dark" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-video-dark-graphic-dark.svg" alt="graphic" height={161} width={1920} loading="lazy" decoding="async" />
         </section>  */}
-
-          <Featured />
-
 <section id="sbsr-1279">
     <div class="cs-container">
         <picture class="cs-picture">
@@ -121,7 +119,7 @@ return (
                 <h2 class="cs-title">We love to be part of the action!</h2>
             </div>
             <p class="cs-text">
-              It's always an absolute joy to be part of your special day. We always get told that we make what can be a very overwhelming day feel fun and stress-free. Whether it's being part of the action, or snapping dreamy mountain wedding photos, it's always highlight for us. </p>
+              It's always an absolute joy to be part of your special day. We always get told that we make what can be a very overwhelming day feel fun and stress-free. Whether it's being part of the action, or snapping dreamy mountain wedding photos, it's always highlight for <Link href="/about">us</Link>. </p>
             <a href="/contact" class="cs-button-solid">Contact us</a>
         </div>
     </div>
@@ -130,6 +128,9 @@ return (
         
     </picture>
 </section>
+          <Featured />
+
+
 
 
 <section id="sbs-1278">
@@ -144,10 +145,10 @@ return (
         <div class="cs-content">
             <div class="cs-flex">
                 <span class="cs-topper">mountain adventures</span>
-                <h2 class="cs-title">giving you the mountain photos og your dreams</h2>
+                <h2 class="cs-title">giving you the mountain photos of your dreams</h2>
             </div>
             <p class="cs-text">
-              We always have so much fun spending time with our bride and groom to capture those bold and breathtaking wedding photos with the beautiful scenery of the Alberta Rockies. And yes... we spend just as much time obsessing over mountain ranges to shoot our next wedding photography session in as we do upgrading our camera gear!
+              We always have so much fun spending time with our bride and groom to capture those bold and breathtaking <Link href="/wedding">wedding photos</Link> with the beautiful scenery of the Alberta Rockies. And yes... we spend just as much time obsessing over mountain ranges to shoot our next wedding photography session in as we do upgrading our camera gear!
             </p>
             <a href="/contact" class="cs-button-solid">contact us</a>
         </div>
@@ -206,7 +207,7 @@ return (
                 people’s lives, which means a lot despite the passing of time.
               </p>
               <p className="cs-text">
-                What sets us apart as Banff wedding photographers is our personalized
+                What sets us apart as <Link href="/about">Banff wedding photographers</Link> is our personalized
                 approach and keen attention to detail. We believe in getting to know our
                 couples, understanding their vision, and infusing our creativity and
                 unique photography and editing style to surpass expectations. Whether
@@ -219,9 +220,9 @@ return (
                 photograpers, you’re not just hiring camera-clickers – you’re welcoming
                 storytellers who celebrate love in its purest form. Let us be a part of
                 your journey, capturing moments that resonate for a lifetime and beyond.
-                Review after review, our clients rave about the stunning work we
-                produce. From capturing bold and breathtaking images to guiding you to
-                the most picturesque locations in Banff, while enjoying a hike together,
+                Review after review, our clients rave about the stunning <Link href="/portfolio">work we
+                produce</Link>. From capturing bold and breathtaking images to guiding you to
+                the most picturesque locations in Banff, <Link href="/locations/calgary-wedding-photographers">Calgary</Link>, <Link href="/locations/canmore-wedding-photographers">Canmore</Link>, <Link href="/locations/jasper-wedding-photographers">Jasper</Link>, <Link href="/locations/lake-louise-wedding-photographers">Lake Louise</Link>, and more, while enjoying a hike together,
                 we are not just Banff wedding photographers; we are storytellers who
                 weave magic into every frame.
               </p>
@@ -281,7 +282,7 @@ return (
                 <h2 className="cs-title">Professional Banff Wedding Photographers</h2>
               </div>
               <p className="cs-text">
-                With endless creativity and passion for wedding photography in Banff, Eliza and Lukas will tell your love story through unique images that can be cherished forever. At 4Eyes Photography, we go beyond mere wedding and engagement photographs; we craft visual narratives that reflect the unique love stories of each couple against the stunning backdrop of Alberta's natural beauty. As experienced Banff wedding photographers, we understand the allure of this picturesque region and weave its charm seamlessly into every frame throughout the wedding photo shoots and meticulous editing. While Banff remains our heart and soul, our passion for capturing those wedding photos extend beyond borders. We believe in exploring new horizons, chasing sunsets in Calgary, embracing romance in Lake Louise, and discovering hidden gems in Canmore. Wherever your love story takes you, we'll be there to frame it beautifully as your professional Banff wedding photographers.          </p>
+                With endless creativity and passion for <Link href="/portfolio">wedding photography</Link> in Banff, Eliza and Lukas will tell your love story through unique images that can be cherished forever. At 4Eyes Photography, we go beyond mere <Link href="/wedding">wedding</Link> and <Link href="/engagement">engagement</Link> photographs; we craft visual narratives that reflect the unique love stories of each couple against the stunning backdrop of Alberta's natural beauty. As experienced Banff wedding photographers, we understand the allure of this picturesque region and weave its charm seamlessly into every frame throughout the wedding photo shoots and meticulous editing. While Banff remains our heart and soul, our passion for capturing those wedding photos extend beyond borders. We believe in exploring new horizons, chasing sunsets in Calgary, embracing romance in Lake Louise, and discovering hidden gems in Canmore. Wherever your love story takes you, we'll be there to frame it beautifully as your professional Banff wedding photographers.          </p>
               <a href="/contact" className="cs-button-solid">Contact us</a>
             </div>
           </div>
@@ -293,21 +294,14 @@ return (
           <div className="cs-container">
             <div className="cs-item">
               <p className="cs-review">
-                Alright, where do I begin.. I must admit I am not one for writing reviews but I felt compelled to share my experience with Eliza &amp; Luka.  Lets not pretend that planning a wedding isn't a stressful experience, I must have spent hours researching various photographers in the area trying to find someone I felt would not only capture our "vision" but someone who my wife and I would enjoy being around.
-                I knew I had found something special the minute we started talking to Eliza and Luka. It was easy to tell they were professional and very passionate about their work, but skillset aside it was their personalities that pulled me in.  So down to earth, funny, energetic, with a raw chemistry between them that I knew they would be the perfect couple to share our day with.
-                We had such a great time, and were so excited with how our photos turned out, I decided to surprise my wife with an after wedding session.  Which again was a wonderful experience.  Their effort, willingness to go the extra mile, and creativity truly speaks to their professionalism and high standards.
-                So if you were like me, stressing out about finding the perfect photographers... you can stop, do yourself a favor and contact Eliza and Luka.
-                It won't be long until we book our 3rd session with them.
-                Hopefully this review helps.
-                Cheers,
-                Brendan
+                I would honestly recommend 4Eyes Photography to everyone! Not only are their photos absolutely incredible but they also ended up being some of my favorite wedding guests. They were a blast and made my awkward self feel like I was just hanging out with friends. If I could give a higher score than 5 stars I would!
               </p>
               <div className="cs-flex-group">
                 <picture className="cs-picture">
-                  <img className="cs-profile" src="https://4eyesphotography.ca/wp-content/uploads/2019/01/best-banff-after-wedding-award-winning-photo-1.jpg" decoding="async" alt="wedding photo headshot" width={82} height={82} aria-hidden="true" loading="lazy" />
+                  <img className="cs-profile" src="http://www.4eyes.purpleparrotwebsites.com/wp-content/uploads/2024/06/Google-Maps.png" decoding="async" alt="wedding photo headshot" width={82} height={82} aria-hidden="true" loading="lazy" />
                 </picture>
                 <span className="cs-name">
-                  Brendan Secord
+                 Christina C.
                 </span>
               </div>
               {/*Quote Icon*/}
@@ -426,7 +420,7 @@ return (
                     Multi-Awarded Photographers
                   </h3>
                   <p className="cs-item-text">
-                    To provide a high level of care to our patients in addition to our clinic's commitment to creating personalized treatment plans that are tailored to each individual's unique needs and goals.
+                    At 4Eyes Photography, creativity is our driving force. When we're not behind the lens, we're brainstorming innovative ideas to elevate our wedding photography to new heights which is why we've earned multiple awards in the wedding photography industry!
                   </p>
                 </li>
                 <li className="cs-li">
@@ -434,15 +428,15 @@ return (
                     We Travel Everywhere
                   </h3>
                   <p className="cs-item-text">
-                    To provide a high level of care to our patients in addition to our clinic's commitment to creating personalized treatment plans that are tailored to each individual's unique needs and goals.
+                    We LOVE to travel and explore new places in and outside of Canada, so we are always on the lookout for a new special location to capture the love of our bride and groom.
                   </p>
                 </li>
                 <li className="cs-li">
                   <h3 className="cs-h3">
-                    We Welcome Everyone
+                    We Immerse Ourselves
                   </h3>
                   <p className="cs-item-text">
-                    To provide a high level of care to our patients in addition to our clinic's commitment to creating personalized treatment plans that are tailored to each individual's unique needs and goals.
+                    We immerse ourselves in your special day, seamlessly blending into the background to capture authentic emotions and candid moments
                   </p>
                 </li>
               </ul>
@@ -572,7 +566,7 @@ return (
                 </div>
                 <div className="cs-review">
                   <p className="cs-review-text">
-                    We had lots of fun during our post-wedding photo session in Kananaskis Country with 4Eyes Photography. Despite being slightly disorganized and ended up meeting the team 45 minutes later than expected to chase the sunset Golden hour, both Lukas and Eliza got such amazing shots for our special shoot at not one, not two but THREE locations - one for photos with my late father's vehicle he gifted me, another at Wedge Pond, and third at the top of South Pocaterra ridge. Our experience with Eliza and Lukas was nothing short of exceptional, in fact they somehow read my mind and suggested the above three locations before I even mentioned them! It was wonderful to have two great, no-nonsense people to take our pictures. Bonus too we had philosophical conversations and really connected! Just the ONE photo at the mountain top made the shoot entirely worth it, not to mention there are at least 20 super amazing ones. The most difficult part now is to choose which one to blow up and put on our wall! We could not have been more happy. 10/10 recommend 4Eyes Photography!                  </p>
+                    We had lots of fun during our post-wedding photo session in Kananaskis Country with 4Eyes Photography. Despite being slightly disorganized and ended up meeting the team 45 minutes later than expected to chase the sunset Golden hour, both Lukas and Eliza got such amazing shots for our special shoot at not one, not two but THREE locations - one for photos with my late father's vehicle he gifted me, another at Wedge Pond, and third at the top of South Pocaterra ridge.</p>
                   <span className="cs-name">Evelyn and Michael</span>
                 </div>
               </div>
@@ -588,12 +582,7 @@ return (
           </picture>
         </section>
         <RecentPosts />
-        <section>
-          <container>
-<div class="elfsight-app-54b365a3-b593-472d-9662-326887486233" data-elfsight-app-lazy></div>
-<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-          </container>
-        </section>
+        
         
        
       </Layout>

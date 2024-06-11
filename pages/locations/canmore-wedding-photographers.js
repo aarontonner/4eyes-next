@@ -7,10 +7,10 @@ import Seo from "../../components/seo"
 export default function Canmore() {
     return (
       <Layout>
-        <Seo title="Canmore Wedding Photographers | 4 Eyes Photography" description="Your Canmore wedding photographers!" />
+        <Seo title="Canmore Wedding Photographers | 4Eyes Photography" description="Your Canmore wedding photographers!" />
         <div id="banner-559">
           <div className="cs-container">
-            <span className="cs-int-topper">4 Eyes Photography</span>
+            <span className="cs-int-topper">4Eyes Photography</span>
             <span className="cs-int-title">Canmore Wedding Photography</span>
             <div className="cs-breadcrumbs">
               <a href="/" className="cs-link">Home</a>
