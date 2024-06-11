@@ -147,7 +147,7 @@ const Blogs = ({ data }) => {
             Blogs
           </span>{" "}
           • Author: 4Eyes Photography •
-          {new Date(date).toLocaleDateString("en-GB", OPTIONS)}
+          {new Date(date).toLocaleDateString("en-GB")}
         </div>
         <div className="blog-tags">
           Tags:
