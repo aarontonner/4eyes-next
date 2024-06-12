@@ -13,10 +13,10 @@ export default function SingleReview() {
           </div>
           <picture className="cs-background">
             {/*Mobile Image*/}
-            <source media="(max-width: 600px)" srcSet="http://www.4eyes.purpleparrotwebsites.com/wp-content/uploads/2024/05/Calgary-Wedding-Photography-1-1.webp" />
+            <source media="(max-width: 600px)" srcSet="https://4eyesphotography.ca/wp-content/uploads/2024/04/Canmone-Wedding-Photographer-2.JPG" />
             {/*Tablet and above Image*/}
-            <source media="(min-width: 601px)" srcSet="http://www.4eyes.purpleparrotwebsites.com/wp-content/uploads/2024/05/Calgary-Wedding-Photography-1-1.webp" />
-            <img loading="lazy" decoding="async" src="http://www.4eyes.purpleparrotwebsites.com/wp-content/uploads/2024/05/Calgary-Wedding-Photography-1-1.webp" alt="group at a table" width={950} height={720} />
+            <source media="(min-width: 601px)" srcSet="https://4eyesphotography.ca/wp-content/uploads/2024/04/Canmone-Wedding-Photographer-2.JPG" />
+            <img loading="lazy" decoding="async" src="https://4eyesphotography.ca/wp-content/uploads/2024/04/Canmone-Wedding-Photographer-2.JPG" alt="review of wedding photography services" width={950} height={720} />
           </picture>
         </div>
       </section>

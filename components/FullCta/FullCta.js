@@ -14,9 +14,9 @@ export default function FullCta() {
         </div>
         {/* Background Image, there's a background image in the CSS for the parallax effect you'll need to change as well if you swap out our images */}
         <picture className="cs-background">
-          <source media="(max-width: 600px)" srcSet="http://www.4eyes.purpleparrotwebsites.com/wp-content/uploads/2024/05/Banff-Wedding-Photographer-1.webp" />
-          <source media="(min-width: 601px)" srcSet="http://www.4eyes.purpleparrotwebsites.com/wp-content/uploads/2024/05/Banff-Wedding-Photographer-1.webp" />
-          <img decoding="async" src="http://www.4eyes.purpleparrotwebsites.com/wp-content/uploads/2024/05/Banff-Wedding-Photographer-1.webp" alt="restaurant" width={2250} height={1500} aria-hidden="true" />
+          <source media="(max-width: 600px)" srcSet="https://4eyesphotography.ca/wp-content/uploads/2020/01/Portrait-Engagement-Session-Banff-Wedding-Photographers-8.jpg" />
+          <source media="(min-width: 601px)" srcSet="https://4eyesphotography.ca/wp-content/uploads/2020/01/Portrait-Engagement-Session-Banff-Wedding-Photographers-8.jpg" />
+          <img decoding="async" src="https://4eyesphotography.ca/wp-content/uploads/2020/01/Portrait-Engagement-Session-Banff-Wedding-Photographers-8.jpg" alt="wedding elopment photography in banff" width={2250} height={1500} aria-hidden="true" />
         </picture>
       </section>
     );

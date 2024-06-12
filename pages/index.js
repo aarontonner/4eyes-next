@@ -299,7 +299,7 @@ return (
               </p>
               <div className="cs-flex-group">
                 <picture className="cs-picture">
-                  <img className="cs-profile" src="http://www.4eyes.purpleparrotwebsites.com/wp-content/uploads/2024/06/Google-Maps.png" decoding="async" alt="wedding photo headshot" width={82} height={82} aria-hidden="true" loading="lazy" />
+                  <img className="cs-profile" src="https://4eyesphotography.ca/wp-content/uploads/2024/04/Canmone-Wedding-Photographer-2.JPG" decoding="async" alt="wedding photo headshot" width={82} height={82} aria-hidden="true" loading="lazy" />
                 </picture>
                 <span className="cs-name">
                  Christina C.
