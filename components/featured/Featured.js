@@ -66,10 +66,10 @@ export default function Featured() {
                 </picture>
                 <picture class="cs-picture cs-picture2">
                     
-                    <source media="(max-width: 600px)" srcset="http://www.4eyes.purpleparrotwebsites.com/wp-content/uploads/2024/05/002Calgary-Wedding-Photographer.webp"/>
+                    <source media="(max-width: 600px)" srcset="https://4eyesphotography.ca/wp-content/uploads/2022/07/Moments-Banff-Wedding-Photographers-2.jpg"/>
                     
-                    <source media="(min-width: 601px)" srcset="http://www.4eyes.purpleparrotwebsites.com/wp-content/uploads/2024/05/002Calgary-Wedding-Photographer.webp"/>
-                    <img loading="lazy" decoding="async" src="http://www.4eyes.purpleparrotwebsites.com/wp-content/uploads/2024/05/002Calgary-Wedding-Photographer.webp" alt="banff wedding photography" width="360" height="240"/>
+                    <source media="(min-width: 601px)" srcset="https://4eyesphotography.ca/wp-content/uploads/2022/07/Moments-Banff-Wedding-Photographers-2.jpg"/>
+                    <img loading="lazy" decoding="async" src="https://4eyesphotography.ca/wp-content/uploads/2022/07/Moments-Banff-Wedding-Photographers-2.jpg" alt="banff wedding photography" width="360" height="240"/>
                 </picture>
             </div>
         </div>
