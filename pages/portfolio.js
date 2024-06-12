@@ -1,3 +1,5 @@
+import Logos from "../components/Logos/Logos";
+import SingleReview from "../components/SingleReview/SingleReview";
 import Layout from "../components/layout";
 import Seo from "../components/seo"
 
@@ -28,6 +30,7 @@ export default function Portfolio() {
             <img loading="lazy" decoding="async" src="https://4eyesphotography.ca/wp-content/uploads/2019/01/banff-best-wedding-winning-photo-4.jpg" alt="about 4 eyes photography" width={1280} height={568} aria-hidden="true" />
           </picture>
         </div>
+        <Logos />
         {/* ============================================ */}
         {/*                    Services                  */}
         {/* ============================================ */}
@@ -93,6 +96,7 @@ export default function Portfolio() {
             </ul>
           </div>
         </section>
+        <SingleReview />
       </Layout>
     );
   }

@@ -1,6 +1,8 @@
 // import "../styles/services.scss"
 
+import Link from "next/link";
 import Form from "../../components/Form/Form";
+import SingleReview from "../../components/SingleReview/SingleReview";
 import Layout from "../../components/layout";
 import Seo from "../../components/seo"
 
@@ -14,8 +16,8 @@ export default function Jasper() {
             <span className="cs-int-title">Jasper Wedding Photography</span>
             <div className="cs-breadcrumbs">
               <a href="/" className="cs-link">Home</a>
-              <a href="/locations" className="cs-link cs-active">Locations</a>
-              <a href="/jasper-wedding-photographers" className="cs-link cs-active">Jasper</a>
+              <a href="/" className="cs-link cs-active">Locations</a>
+              <a href="/locations/jasper-wedding-photographers" className="cs-link cs-active">Jasper</a>
             </div>
           </div>
           {/*Background Image*/}
@@ -66,7 +68,7 @@ export default function Jasper() {
                     Immersive Storytelling
                   </h3>
                   <p className="cs-item-text">
-                    At 4Eyes Photography, creativity is our driving force behind the
+                    At <Link href="/" className="anchor">4Eyes Photography</Link>, creativity is our driving force behind the
                     lens when photographing Jasper weddings. When we're not behind the
                     shutter click, we're brainstorming more ideas to take our Jasper
                     wedding photography to the next level.
@@ -118,6 +120,7 @@ export default function Jasper() {
           </div>
           <div className="cs-bubbles" aria-hidden="true" />
         </section>
+        <SingleReview />
         <Form />
       </Layout>
     );

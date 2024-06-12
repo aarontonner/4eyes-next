@@ -1,5 +1,7 @@
 // import "../styles/contact.scss"
 import Form from "../components/Form/Form"
+import Logos from "../components/Logos/Logos";
+import SingleReview from "../components/SingleReview/SingleReview";
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
@@ -29,7 +31,10 @@ export default function Contact() {
             <img loading="lazy" decoding="async" src="https://4eyesphotography.ca/wp-content/uploads/2021/02/contact-us-1.jpg" alt="contact 4 eyes photography" width={1280} height={568} aria-hidden="true" />
           </picture>
           
-        </div><Form />
+        </div>
+        <Form />
+        <Logos />
+        <SingleReview />
         </Layout>
     );
   }

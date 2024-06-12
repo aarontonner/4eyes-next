@@ -5,6 +5,7 @@ import RecentPosts from "../components/RecentPosts/RecentPosts";
 import Featured from "../components/featured/Featured";
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import FullCta from "../components/FullCta/FullCta";
 export default function Home(){
 return (
       <Layout>
@@ -119,7 +120,7 @@ return (
                 <h2 class="cs-title">We love to be part of the action!</h2>
             </div>
             <p class="cs-text">
-              It's always an absolute joy to be part of your special day. We always get told that we make what can be a very overwhelming day feel fun and stress-free. Whether it's being part of the action, or snapping dreamy mountain wedding photos, it's always highlight for <Link href="/about">us</Link>. </p>
+              It's always an absolute joy to be part of your special day. We always get told that we make what can be a very overwhelming day feel fun and stress-free. Whether it's being part of the action, or snapping dreamy mountain wedding photos, it's always highlight for <Link className="anchor" href="/about">us</Link>. </p>
             <a href="/contact" class="cs-button-solid">Contact us</a>
         </div>
     </div>
@@ -148,7 +149,7 @@ return (
                 <h2 class="cs-title">giving you the mountain photos of your dreams</h2>
             </div>
             <p class="cs-text">
-              We always have so much fun spending time with our bride and groom to capture those bold and breathtaking <Link href="/wedding">wedding photos</Link> with the beautiful scenery of the Alberta Rockies. And yes... we spend just as much time obsessing over mountain ranges to shoot our next wedding photography session in as we do upgrading our camera gear!
+              We always have so much fun spending time with our bride and groom to capture those bold and breathtaking <Link className="anchor" href="/wedding">wedding photos</Link> with the beautiful scenery of the Alberta Rockies. And yes... we spend just as much time obsessing over mountain ranges to shoot our next wedding photography session in as we do upgrading our camera gear!
             </p>
             <a href="/contact" class="cs-button-solid">contact us</a>
         </div>
@@ -158,7 +159,7 @@ return (
     </picture>
 </section>
                                 
-                                      
+   <FullCta />                                   
 
         {/* ============================================ */}
         {/*            Side by Side Reverse              */}
@@ -207,7 +208,7 @@ return (
                 people’s lives, which means a lot despite the passing of time.
               </p>
               <p className="cs-text">
-                What sets us apart as <Link href="/about">Banff wedding photographers</Link> is our personalized
+                What sets us apart as <Link className="anchor" href="/about">Banff wedding photographers</Link> is our personalized
                 approach and keen attention to detail. We believe in getting to know our
                 couples, understanding their vision, and infusing our creativity and
                 unique photography and editing style to surpass expectations. Whether
@@ -220,9 +221,9 @@ return (
                 photograpers, you’re not just hiring camera-clickers – you’re welcoming
                 storytellers who celebrate love in its purest form. Let us be a part of
                 your journey, capturing moments that resonate for a lifetime and beyond.
-                Review after review, our clients rave about the stunning <Link href="/portfolio">work we
+                Review after review, our clients rave about the stunning <Link className="anchor" href="/portfolio">work we
                 produce</Link>. From capturing bold and breathtaking images to guiding you to
-                the most picturesque locations in Banff, <Link href="/locations/calgary-wedding-photographers">Calgary</Link>, <Link href="/locations/canmore-wedding-photographers">Canmore</Link>, <Link href="/locations/jasper-wedding-photographers">Jasper</Link>, <Link href="/locations/lake-louise-wedding-photographers">Lake Louise</Link>, and more, while enjoying a hike together,
+                the most picturesque locations in Banff, <Link className="anchor" href="/locations/calgary-wedding-photographers">Calgary</Link>, <Link className="anchor" href="/locations/canmore-wedding-photographers">Canmore</Link>, <Link className="anchor" href="/locations/jasper-wedding-photographers">Jasper</Link>, <Link className="anchor" href="/locations/lake-louise-wedding-photographers">Lake Louise</Link>, and more, while enjoying a hike together,
                 we are not just Banff wedding photographers; we are storytellers who
                 weave magic into every frame.
               </p>
@@ -282,7 +283,7 @@ return (
                 <h2 className="cs-title">Professional Banff Wedding Photographers</h2>
               </div>
               <p className="cs-text">
-                With endless creativity and passion for <Link href="/portfolio">wedding photography</Link> in Banff, Eliza and Lukas will tell your love story through unique images that can be cherished forever. At 4Eyes Photography, we go beyond mere <Link href="/wedding">wedding</Link> and <Link href="/engagement">engagement</Link> photographs; we craft visual narratives that reflect the unique love stories of each couple against the stunning backdrop of Alberta's natural beauty. As experienced Banff wedding photographers, we understand the allure of this picturesque region and weave its charm seamlessly into every frame throughout the wedding photo shoots and meticulous editing. While Banff remains our heart and soul, our passion for capturing those wedding photos extend beyond borders. We believe in exploring new horizons, chasing sunsets in Calgary, embracing romance in Lake Louise, and discovering hidden gems in Canmore. Wherever your love story takes you, we'll be there to frame it beautifully as your professional Banff wedding photographers.          </p>
+                With endless creativity and passion for <Link className="anchor" href="/portfolio">wedding photography</Link> in Banff, Eliza and Lukas will tell your love story through unique images that can be cherished forever. At 4Eyes Photography, we go beyond mere <Link className="anchor" href="/wedding">wedding</Link> and <Link className="anchor" href="/engagement">engagement</Link> photographs; we craft visual narratives that reflect the unique love stories of each couple against the stunning backdrop of Alberta's natural beauty. As experienced Banff wedding photographers, we understand the allure of this picturesque region and weave its charm seamlessly into every frame throughout the wedding photo shoots and meticulous editing. While Banff remains our heart and soul, our passion for capturing those wedding photos extend beyond borders. We believe in exploring new horizons, chasing sunsets in Calgary, embracing romance in Lake Louise, and discovering hidden gems in Canmore. Wherever your love story takes you, we'll be there to frame it beautifully as your professional Banff wedding photographers.          </p>
               <a href="/contact" className="cs-button-solid">Contact us</a>
             </div>
           </div>
@@ -581,7 +582,6 @@ return (
             <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Fripple3.svg" alt="person" width={566} height={309} />
           </picture>
         </section>
-        <RecentPosts />
         
         
        

@@ -1,6 +1,8 @@
 // import "../styles/services.scss"
 
+import Link from "next/link";
 import Form from "../../components/Form/Form";
+import SingleReview from "../../components/SingleReview/SingleReview";
 import Layout from "../../components/layout";
 import Seo from "../../components/seo"
 
@@ -14,8 +16,8 @@ export default function LakeLouise() {
             <span className="cs-int-title">Lake Louise Wedding Photography</span>
             <div className="cs-breadcrumbs">
               <a href="/" className="cs-link">Home</a>
-              <a href="/locations" className="cs-link cs-active">Locations</a>
-              <a href="/lake-louise-wedding-photographers" className="cs-link cs-active">Lake Louise</a>
+              <a href="/" className="cs-link cs-active">Locations</a>
+              <a href="/locations/lake-louise-wedding-photographers" className="cs-link cs-active">Lake Louise</a>
             </div>
           </div>
           {/*Background Image*/}
@@ -66,7 +68,7 @@ export default function LakeLouise() {
                     Immersive Storytelling
                   </h3>
                   <p className="cs-item-text">
-                    At 4Eyes Photography, creativity is our driving force behind the
+                    At <Link href="/" className="anchor">4Eyes Photography</Link>, creativity is our driving force behind the
                     lens when photographing Lake Louise weddings. When we're not behind the
                     shutter click, we're brainstorming more ideas to take our Lake Louise
                     wedding photography to the next level.
@@ -101,6 +103,7 @@ export default function LakeLouise() {
           </div>
           <div className="cs-bubbles" aria-hidden="true" />
         </section>
+        <SingleReview />
         <Form />
       </Layout>
     );

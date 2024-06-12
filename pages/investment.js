@@ -2,6 +2,8 @@ import Layout from "../components/layout";
 import Form from "../components/Form/Form"
 import Seo from "../components/seo"
 import Link from "next/link";
+import Logos from "../components/Logos/Logos";
+import SingleReview from "../components/SingleReview/SingleReview";
 
 // import "../styles/investment.scss"
 export default function Investment() {
@@ -30,6 +32,35 @@ export default function Investment() {
             <img loading="lazy" decoding="async" src="https://4eyesphotography.ca/wp-content/uploads/2022/03/Banff-Calgary-Wedding-Photographers-7.jpg" alt="about 4 eyes photography" width={1280} height={568} aria-hidden="true" />
           </picture>
         </div>
+        <Logos />
+        {/* ============================================ */}
+        {/*                Side By Side                  */}
+        {/* ============================================ */}
+                <section id="cta-80">
+          {/* Need this to create a stage for the stripes, and use overflow: hidden on this container so the stripes don't overlap the sections above and below #cta */}
+          <div className="cs-stripes" />
+          <div className="cs-container">
+            {/* Left Section */}
+            <div className="cs-content">
+              <span className="cs-topper">we'll make it work for you</span>
+              <h2 className="cs-title">perfectly tailored photography packages for your special day</h2>
+              <p className="cs-text">
+                Whether it's a spontaneous elopement photography session, or an intimate adventure photography session, our packages can be tailored to you.
+              </p>
+              <a className="cs-button-solid" aria-label="learn more about our programs" href="/contact">Contact Us</a>
+            </div>
+            {/* Right Section */}
+            <picture className="cs-picture">
+              <source media="(max-width: 600px)" srcSet="
+          https://4eyesphotography.ca/wp-content/uploads/2023/12/Banff-Elopement-Photography-9.JPG
+        " />
+              <source media="(min-width: 601px)" srcSet="
+          https://4eyesphotography.ca/wp-content/uploads/2023/12/Banff-Elopement-Photography-9.JPG
+        " />
+              <img aria-hidden="true" loading="lazy" decoding="async" src="https://4eyesphotography.ca/wp-content/uploads/2023/12/Banff-Elopement-Photography-9.JPG" alt="eloped" width={457} height={632} />
+            </picture>
+          </div>
+        </section>
         {/* ============================================ */}
         {/*                Side By Side                  */}
         {/* ============================================ */}
@@ -79,8 +110,8 @@ export default function Investment() {
               <span className="cs-topper">4Eyes Photography</span>
               <h2 className="cs-title">Your Investment in us</h2>
               <p className="cs-text">What sets us apart is our dedication to crafting unforgettable memories in unique and awe-inspiring locations. We don't just photograph weddings; we embark on adventures with our couples, scaling mountains and traversing valleys to capture images that are as extraordinary as your love story.</p>
-              <p className="cs-text">At <Link href="/">4Eyes Photography</Link>, we understand that every couple is unique, and so are their wedding photography needs. That's why we offer custom packages tailored to your vision and budget. From intimate elopements to grand celebrations, we work closely with you to ensure every detail is perfect.</p>
-              <p className="cs-text">We welcome the opportunity to discuss your dream photo session further. Whether you envision a romantic <Link href="/">mountain elopement</Link> or a whimsical <Link href="/engagement">engagement</Link> shoot, let's start the conversation. Our flexibility knows no bounds, and we're committed to creating a package that exceeds your expectations.
+              <p className="cs-text">At <Link className="anchor" href="/">4Eyes Photography</Link>, we understand that every couple is unique, and so are their wedding photography needs. That's why we offer custom packages tailored to your vision and budget. From intimate elopements to grand celebrations, we work closely with you to ensure every detail is perfect.</p>
+              <p className="cs-text">We welcome the opportunity to discuss your dream photo session further. Whether you envision a romantic <Link className="anchor" href="/">mountain elopement</Link> or a whimsical <Link className="anchor" href="/engagement">engagement</Link> shoot, let's start the conversation. Our flexibility knows no bounds, and we're committed to creating a package that exceeds your expectations.
               </p>
               <ul className="cs-list">
                 <li className="cs-li">With years of experience capturing love stories in Alberta's most stunning locations, we bring a level of expertise and artistry that sets us apart.</li>
@@ -262,6 +293,7 @@ export default function Investment() {
             <img aria-hidden="true" loading="lazy" decoding="async" src="https://4eyesphotography.ca/wp-content/uploads/2022/11/Banff-Wedding-Photography-Ceremony-10.jpg" alt="wedding photography packages" width={1280} height={620} />
           </picture>
         </section>
+        <SingleReview />
         <Form />
       </Layout>
     );

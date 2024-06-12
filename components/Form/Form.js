@@ -8,8 +8,8 @@ export default function Form() {
             <h2 className="cs-title">We'd love to hear from you!</h2>
             <p className="cs-text">
               We'd be so thrilled to be part of your wedding journey. Whether you're
-              looking for the perfect photographer to capture your big day in <Link href="/locations/calgary-wedding-photographers">Calgary</Link> or amidst the stunning landscapes of <Link href="/">Banff</Link>, we're here to turn your
-              vision into reality. Got questions about our services, <Link href="/investment">wedding packages</Link>, or
+              looking for the perfect photographer to capture your big day in <Link className="anchor" href="/locations/calgary-wedding-photographers">Calgary</Link> or amidst the stunning landscapes of <Link className="anchor" href="/">Banff</Link>, we're here to turn your
+              vision into reality. Got questions about our services, <Link className="anchor" href="/investment">wedding packages</Link>, or
               availability? Need advice on choosing the ideal location for your
               engagement shoot or wedding ceremony? Or perhaps you just want to chat
               about your photography dreams over a virtual cup of coffee? Whatever it

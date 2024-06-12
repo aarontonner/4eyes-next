@@ -1,6 +1,8 @@
 // import "../styles/services.scss"
 
+import Link from "next/link";
 import Form from "../../components/Form/Form";
+import SingleReview from "../../components/SingleReview/SingleReview";
 import Layout from "../../components/layout";
 import Seo from "../../components/seo"
 
@@ -14,8 +16,8 @@ export default function Calgary() {
             <span className="cs-int-title">Calgary Wedding Photography</span>
             <div className="cs-breadcrumbs">
               <a href="/" className="cs-link">Home</a>
-              <a href="/locations" className="cs-link cs-active">Locations</a>
-              <a href="/calgary-wedding-photographers" className="cs-link cs-active">Calgary</a>
+              <a href="/" className="cs-link cs-active">Locations</a>
+              <a href="/locations/calgary-wedding-photographers" className="cs-link cs-active">Calgary</a>
             </div>
           </div>
           {/*Background Image*/}
@@ -66,7 +68,7 @@ export default function Calgary() {
                     Immersive Storytelling
                   </h3>
                   <p className="cs-item-text">
-                    At 4Eyes Photography, creativity is our driving force behind the
+                    At <Link className="anchor" href="/">4Eyes Photography</Link>, creativity is our driving force behind the
                     lens when photographing Calgary weddings. When we're not behind the
                     shutter click, we're brainstorming more ideas to take our Calgary
                     wedding photography to the next level.
@@ -78,7 +80,7 @@ export default function Calgary() {
                     Wanderlust Adventures in Calgary
                   </h3>
                   <p className="cs-item-text">
-                    From Banff to Calgary and beyond, we travel far and wide to capture
+                    From <Link href="/" className="anchor">Banff</Link> to Calgary and beyond, we travel far and wide to capture
                     your love story in stunning detail. No destination is too far, no
                     adventure too grand for us to embark on with you.
                   </p>
@@ -91,7 +93,7 @@ export default function Calgary() {
               </h1>
               <p>
                 Capturing Love in Calgary: Your Ultimate Wedding Photography Destination
-                – Welcome to 4Eyes Photography, your Calgary wedding photographers! We
+                – Welcome to 4Eyes Photography, your Calgary <Link href="/" className="anchor">wedding photographers</Link>! We
                 love photographing client love stories in the big city, where urban
                 sophistication meets natural beauty, and love unfolds against the
                 stunning backdrop of the Canadian Rockies. There are some truly
@@ -101,10 +103,10 @@ export default function Calgary() {
                 rockies in the background. These photos, whether they be engagement
                 photos, or wedding photos, really tell the story of ‘this is our home,
                 this is where our future lays’, and we LOVE capturing that in our
-                Calgary wedding photography shoots. At 4Eyes Photography, we are your
+                Calgary wedding photography shoots. At <Link href="/about" className="anchor">4Eyes Photography</Link>, we are your
                 premier wedding photographers in Calgary, dedicated to transforming your
                 special day into timeless memories filled with joy, love, and
-                unforgettable moments. Contact us today our view our wedding photography
+                unforgettable moments. <Link href="/contact" className="anchor"></Link>Contact us today our view our wedding photography
                 pricing page to get started with us!
               </p>
               <h2>Why Choose 4Eyes for Your Calgary Wedding Photography?</h2>
@@ -173,6 +175,7 @@ export default function Calgary() {
           </div>
           <div className="cs-bubbles" aria-hidden="true" />
         </section>
+        <SingleReview />
         <Form />
       </Layout>
     );

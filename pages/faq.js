@@ -3,6 +3,8 @@ import { useState } from "react";
 import Form from "../components/Form/Form";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
+import Logos from "../components/Logos/Logos";
+import SingleReview from "../components/SingleReview/SingleReview";
 const faqData = [
   {
     question: "What is your photography style?",
@@ -98,6 +100,7 @@ export default function Faq() {
           />
         </picture>
       </div>
+      <Logos />
       {/* ============================================ */}
       {/*                    FAQ                       */}
       {/* ============================================ */}
@@ -250,6 +253,7 @@ export default function Faq() {
           </picture>
         </div>
       </section>
+      <SingleReview />
       <Form />
     </Layout>
   );

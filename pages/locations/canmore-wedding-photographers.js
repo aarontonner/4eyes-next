@@ -1,8 +1,10 @@
 // import "../styles/services.scss"
 
 import Form from "../../components/Form/Form";
+import SingleReview from "../../components/SingleReview/SingleReview";
 import Layout from "../../components/layout";
 import Seo from "../../components/seo"
+import Link from "next/link";
 
 export default function Canmore() {
     return (
@@ -14,8 +16,8 @@ export default function Canmore() {
             <span className="cs-int-title">Canmore Wedding Photography</span>
             <div className="cs-breadcrumbs">
               <a href="/" className="cs-link">Home</a>
-              <a href="/locations" className="cs-link cs-active">Locations</a>
-              <a href="/canmore-wedding-photographers" className="cs-link cs-active">Canmore</a>
+              <a href="/" className="cs-link cs-active">Locations</a>
+              <a href="/locations/canmore-wedding-photographers" className="cs-link cs-active">Canmore</a>
             </div>
           </div>
           {/*Background Image*/}
@@ -66,7 +68,7 @@ export default function Canmore() {
                     Immersive Storytelling
                   </h3>
                   <p className="cs-item-text">
-                    At 4Eyes Photography, creativity is our driving force behind the
+                    At <Link href="/" className="anchor">4Eyes Photography</Link>, creativity is our driving force behind the
                     lens when photographing Canmore weddings. When we're not behind the
                     shutter click, we're brainstorming more ideas to take our Canmore
                     wedding photography to the next level.
@@ -118,6 +120,7 @@ export default function Canmore() {
           </div>
           <div className="cs-bubbles" aria-hidden="true" />
         </section>
+        <SingleReview />
         <Form />
       </Layout>
     );
