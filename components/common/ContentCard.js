@@ -121,6 +121,7 @@ export default function ContentCard({ data }) {
                       height={400}
                       aria-hidden="true"
                       loading="lazy"
+                      style={{ objectFit: "fill" }}
                     />
                   </picture>
                 </li>

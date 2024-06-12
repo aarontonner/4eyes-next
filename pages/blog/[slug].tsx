@@ -1,25 +1,26 @@
-import Layout from "../../components/layout"
-import { useRouter } from "next/router"
-import { getSingleBlog } from "../../lib/api"
-import { useState } from "react"
-import ImageLightbox from "../../components/common/Lightbox"
-import { OPTIONS } from "../../pages/blog.js"
-import Image from "next/image"
+import Layout from "../../components/layout";
+import { useRouter } from "next/router";
+import { getSingleBlog } from "../../lib/api";
+import { useState } from "react";
+import ImageLightbox from "../../components/common/Lightbox";
+import { OPTIONS } from "../../pages/blog.js";
+import Image from "next/image";
 
 export async function getServerSideProps({ query }) {
-  let data = null
+  let data = null;
   try {
-    data = await getSingleBlog(query?.id)
-  } catch (err) {}
-
+    data = await getSingleBlog(query?.slug);
+  } catch (err) {
+    console.log(err);
+  }
   return {
     props: {
       data,
     },
-  }
+  };
 }
 const formatDate = (dateString) => {
-  const date = new Date(dateString)
+  const date = new Date(dateString);
 
   const months = [
     "JAN",
@@ -34,21 +35,21 @@ const formatDate = (dateString) => {
     "OCT",
     "NOV",
     "DEC",
-  ]
-  const month = months[date.getMonth()]
-  const day = date.getDate()
-  const year = date.getFullYear()
+  ];
+  const month = months[date.getMonth()];
+  const day = date.getDate();
+  const year = date.getFullYear();
 
-  return { month, day, year }
-}
+  return { month, day, year };
+};
 const Blogs = ({ data }) => {
-  const [isOpenLightBox, setIsOpenLightBox] = useState(false)
-  const [index, setIndex] = useState(0)
-  const { title, tags, content, date, extraFields } = data?.post || {}
-  const { blogGalleries, bannerImage } = extraFields || {}
-  const router = useRouter()
-  const { month, day, year } = formatDate(date)
-  const { id } = router.query
+  const [isOpenLightBox, setIsOpenLightBox] = useState(false);
+  const [index, setIndex] = useState(0);
+  const { title, tags, content, date, extraFields } = data?.postBy || {};
+  const { blogGalleries, bannerImage } = extraFields || {};
+  const router = useRouter();
+  const { month, day, year } = formatDate(date);
+  const { id } = router.query;
   if (isOpenLightBox) {
     return (
       <ImageLightbox
@@ -57,9 +58,8 @@ const Blogs = ({ data }) => {
         images={blogGalleries?.nodes}
         index={index}
       />
-    )
+    );
   }
-
   return (
     <Layout preview={undefined}>
       <div id="banner-559 " style={{ position: "relative" }}>
@@ -113,8 +113,8 @@ const Blogs = ({ data }) => {
                   <div
                     className="blog-img-container"
                     onClick={() => {
-                      setIsOpenLightBox(true)
-                      setIndex(i)
+                      setIsOpenLightBox(true);
+                      setIndex(i);
                     }}
                   >
                     <img
@@ -137,7 +137,7 @@ const Blogs = ({ data }) => {
                     </div>
                   </div>
                 </div>
-              )
+              );
             })}
           </div>
         </div>
@@ -145,21 +145,22 @@ const Blogs = ({ data }) => {
           Category:{" "}
           <span className="cursor-pointer" onClick={() => router.push("/blog")}>
             Blogs
-          </span>{" "}
+          </span>
           • Author: 4Eyes Photography •
           {new Date(date).toLocaleDateString("en-GB")}
         </div>
         <div className="blog-tags">
           Tags:
-          {tags?.nodes?.map((item) => {
+          {tags?.nodes?.map((item, i) => {
             return (
               <span
+                key={i}
                 className="blog-tags-item cursor-pointer"
                 onClick={() => router.push(item?.link)}
               >
                 {item?.name}
               </span>
-            )
+            );
           })}
         </div>
         <div className="share-blog">
@@ -205,6 +206,6 @@ const Blogs = ({ data }) => {
         </div>
       </div>
     </Layout>
-  )
-}
-export default Blogs
+  );
+};
+export default Blogs;

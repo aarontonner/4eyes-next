@@ -441,60 +441,63 @@ export async function getBlogPosts() {
   return data;
 }
 
-export async function getSingleBlog(id) {
+export async function getSingleBlog(slug) {
   const data = await fetchAPI(`
-  query single_post {
-    post(id: "${id}") {
-      id
-      postId
-      title
-      slug
-      uri
-      categories {
-        edges {
-          node {
-            id
-          }
+query single_post_by_slug {
+  postBy(slug: "${slug}") {
+    id
+    postId
+    title
+    slug
+    uri
+    categories {
+      edges {
+        node {
+          id
         }
       }
-      status
-      date
-      extraFields {
-        bannerImage {
-          node {
-            altText
-            sourceUrl
-          }
-        }
-        blogGalleries {
-          nodes {
-            altText
-            sourceUrl
-          }
-        }
-      }
-      featuredImage {
+    }
+    status
+    date
+    extraFields {
+      bannerImage {
         node {
           altText
           sourceUrl
         }
       }
-      content
-      tags {
+      blogGalleries {
         nodes {
-          name
-          link
+          altText
+          sourceUrl
         }
       }
-      comments {
-        edges {
-          node {
-            id
-          }
+    }
+    featuredImage {
+      node {
+        altText
+        sourceUrl
+      }
+    }
+    content
+    tags {
+      nodes {
+        name
+        link
+      }
+    }
+    comments {
+      edges {
+        node {
+          id
         }
       }
     }
   }
-  `);
+}
+
+
+`);
+
   return data;
 }

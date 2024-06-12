@@ -19,7 +19,10 @@ export default function Blog({ data }) {
   const { extraFields } = data.page;
   return (
     <Layout>
-      <Seo title="Blog | 4Eyes Photography" description="Welcome to our blog!" />
+      <Seo
+        title="Blog | 4Eyes Photography"
+        description="Welcome to our blog!"
+      />
       <div id="banner-559">
         {/*Background Image*/}
         <picture className="cs-background">
@@ -68,7 +71,6 @@ export default function Blog({ data }) {
                     onClick={() =>
                       router.push({
                         pathname: `blog/${item?.slug}`,
-                        query: { id: item?.id },
                       })
                     }
                   >
@@ -85,7 +87,6 @@ export default function Blog({ data }) {
                         className="see-more"
                         href={{
                           pathname: `blog/${item?.slug}`,
-                          query: { id: item?.id },
                         }}
                       >
                         See More
